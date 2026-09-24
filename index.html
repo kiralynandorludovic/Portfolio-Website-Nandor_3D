@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Király Nándor — Freelance CGI Artist</title>
+<meta name="description" content="Freelance CGI artist based in Romania. Product visualization, architectural visualization and personal 3D art. Bringing ideas to life in Blender.">
+
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <a href="#home" class="brand">
+    <img src="assets/icons/logo.svg" alt="Király Nándor" class="brand-logo">
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navOverlay" aria-label="Open menu">
+    <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+    <span class="x-icon">×</span>
+  </button>
+</header>
+
+<!-- ============ NAV OVERLAY ============ -->
+<nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+  <ul class="nav-overlay-list">
+    <li><a href="#home" data-nav><span class="n">01</span>Home</a></li>
+    <li><a href="#about" data-nav><span class="n">02</span>About</a></li>
+    <li><a href="#featured" data-nav><span class="n">03</span>Featured</a></li>
+    <li><a href="#work-product" data-nav><span class="n">04</span>Product Viz</a></li>
+    <li><a href="#work-arch" data-nav><span class="n">05</span>Architectural Viz</a></li>
+    <li><a href="#work-art" data-nav><span class="n">06</span>Personal Art</a></li>
+    <li><a href="#gallery" data-nav><span class="n">07</span>Gallery</a></li>
+    <li><a href="#contact" data-nav><span class="n">08</span>Contact</a></li>
+  </ul>
+  <p class="nav-overlay-foot">kiralynandorludovic@gmail.com &nbsp;·&nbsp; <a href="tel:0040771378538">0040-771-378-538</a></p>
+</nav>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero dot-grid">
+    <div class="wrap" style="width:100%;">
+      <div class="hero-badge"><span class="pulse"></span>3D &amp; CGI artist in Romania</div>
+
+      <h1 class="hero-headline">
+        <span class="hi">Hi,</span>
+        <span class="hero-photo"><img src="assets/img/hero-portrait.jpg" alt="Portrait of Király Nándor"></span>
+        <span class="name">I'm Nándor</span>
+      </h1>
+
+      <p class="hero-sub">Freelance CGI artist bringing products, spaces and ideas to life through 3D visuals.</p>
+
+      <div class="hero-cta">
+        <a href="#gallery" class="btn btn-primary">View the gallery</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero-scroll" aria-label="Scroll to about section">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about dot-grid" id="about">
+    <div class="wrap section">
+      <div class="about-grid">
+        <div class="about-photo-wrap reveal-on-scroll">
+          <div class="about-photo">
+            <img src="assets/img/about-portrait.png" alt="Király Nándor sitting, portrait photo">
+          </div>
+          <div class="about-tag"><strong>5+</strong>years in 3D</div>
+        </div>
+
+        <div>
+          <p class="eyebrow">About me</p>
+          <p class="about-intro">Hi, I'm <strong>Nándor</strong> a 23 year old, self‑taught CGI artist based in Romania, working with brands and individuals to turn ideas into reality.</p>
+
+          <div class="about-facts">
+            <div class="about-fact">
+              <h3>Experience</h3>
+              <p>I've been freelancing for brands and individuals for the past 5+ years, mainly focusing on product visualizations and architectural visualizations.</p>
+            </div>
+            <div class="about-fact">
+              <h3>Education</h3>
+              <p>Self‑taught in modeling and rendering with 5+ years in Blender, I also have a degree in Computer Science.</p>
+            </div>
+            <div class="about-fact">
+              <h3>Inspiration</h3>
+              <p>I’m inspired by minimalistic modern designs. I love dramatic lighting and storytelling. I’m also a huge fan of a large variety of music genres.</p>
+            </div>
+            <div class="about-fact">
+              <h3>Software</h3>
+              <div class="software-row">
+              <figure aria-label="Blender" title="Blender"><img src="assets/icons/blender.svg" alt="Instagram Logo"/></figure>
+              <figure aria-label="Maya" title="Maya"><img src="assets/icons/maya.svg" alt="Facebook Logo"/></figure>
+              <figure aria-label="Substance Painter" title="Substance Painter"><img src="assets/icons/adobe-substance.svg" alt="Instagram Logo"/></figure>
+              <figure aria-label="Photoshop" title="Photoshop"><img src="assets/icons/adobe-photoshop.svg" alt="Instagram Logo"/></figure>
+              <figure aria-label="Illustrator" title="Illustrator"><img src="assets/icons/adobe-illustrator.svg" alt="Instagram Logo"/></figure>
+              <figure aria-label="DaVinci Resolve" title="DaVinci Resolve"><img src="assets/icons/davinci-resolve.svg" alt="Instagram Logo"/></figure>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED WORK ============ -->
+  <section class="featured dot-grid" id="featured">
+    <div class="wrap section">
+      <div class="work-head">
+        <div class="section-head">
+          <p class="eyebrow">Handpicked</p>
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-desc">Take a closer look at my most recent works. Browse between multiple angles, work in progress images and detailed breakdowns.</p>
+        </div>
+        <div class="carousel-controls">
+          <button class="car-btn" data-car-prev="featured" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="car-btn" data-car-next="featured" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="carousel featured-carousel reveal-on-scroll" id="carousel-featured">
+
+        <button class="feat-card" data-project="fossil_chronograph">
+          <figure><img src="assets/img/Product_Viz/Fossil_Chronograph_1.jpg" alt="fossil_chronograph" loading="lazy"></figure>
+          <span class="feat-info"><span class="feat-title">Fossil - FS6015 Chronograph</span><span class="feat-cta">View project <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </button>
+
+        <button class="feat-card" data-project="scandi_bedroom">
+          <figure><img src="assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg" alt="Scandinavian bedroom" loading="lazy"></figure>
+          <span class="feat-info"><span class="feat-title">Scandinavian bedroom</span><span class="feat-cta">View project <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </button>
+
+        <button class="feat-card" data-project="la_rue_verte">
+          <figure><img src="assets/img/Product_Viz/La_Rue_Verte_1.jpg" alt="La_Rue_Verte" loading="lazy"></figure>
+          <span class="feat-info"><span class="feat-title">La Rue Verte - Lotion Étoile</span><span class="feat-cta">View project <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </button>
+
+         <button class="feat-card" data-project="estee_lauder_serum">
+          <figure><img src="assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg" alt="estee_lauder_serum" loading="lazy"></figure>
+          <span class="feat-info"><span class="feat-title">Estée Lauder - Peptide Serum</span><span class="feat-cta">View project <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </button>
+
+        <button class="feat-card" data-project="cld_9">
+          <figure><img src="assets/img/Product_Viz/CLD_9_1.jpg" alt="CLD_9_Packaging" loading="lazy"></figure>
+          <span class="feat-info"><span class="feat-title">Supplements by CLD-9</span><span class="feat-cta">View project <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </button>
+
+        <button class="feat-card" data-project="clinique_surge">
+          <figure><img src="assets/img/Product_Viz/Clinique_1.jpg" alt="clinique_surge" loading="lazy"></figure>
+          <span class="feat-info"><span class="feat-title">Clinique - Moisture Surge</span><span class="feat-cta">View project <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </button>
+
+         <button class="feat-card" data-project="modern_bedroom">
+          <figure><img src="assets/img/Arch_Viz/Modern_Bedroom_1.jpg" alt="modern_bedroom" loading="lazy"></figure>
+          <span class="feat-info"><span class="feat-title">Modern Bedroom</span><span class="feat-cta">View project <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT VISUALIZATION ============ -->
+  <section class="work-section" id="work-product">
+    <div class="wrap section">
+      <div class="work-head">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title">Product Visualization</h2>
+        </div>
+        <div class="carousel-controls">
+          <button class="car-btn" data-car-prev="product" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="car-btn" data-car-next="product" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="carousel reveal-on-scroll" id="carousel-product">
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Fossil_Chronograph_1.jpg" data-title="FS6015 Chronograph" data-by="Fossil ">
+          <figure><img src="assets/img/Product_Viz/Fossil_Chronograph_1.jpg" alt="fossil_chronograph" loading="lazy"></figure>
+          <figcaption><div class="piece-title">FS6015 Chronograph</div><div class="piece-by">by FOSSIL</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Evermere_Serum.jpg" data-title="Botnical Glow" data-by="EVERMERE">
+          <figure><img src="assets/img/Product_Viz/Evermere_Serum.jpg" alt="Evermere_Serum" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Botanical Glow</div><div class="piece-by">by EVERMERE</div></figcaption>
+        </button>
+      
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Clinical_Serum.jpg" data-title="Peptide Repair Serum" data-by="CLINICAL">
+          <figure><img src="assets/img/Product_Viz/Clinical_Serum.jpg" alt="Clinical_Repair_Serum" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Peptide Repair Serum</div><div class="piece-by">by CLINICAL</div></figcaption>
+        </button>
+          
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/UNIT1_Bottle.jpg" data-title="Water Bottle" data-by="UNIT 1">
+          <figure><img src="assets/img/Product_Viz/UNIT1_Bottle.jpg" alt="UNIT1_Bottle" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Water Bottle</div><div class="piece-by">by UNIT 1</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/La_Rue_Verte_1.jpg" data-title="Lotion Étoile" data-by="LA RUE VERTE">
+          <figure><img src="assets/img/Product_Viz/La_Rue_Verte_1.jpg" alt="la_rue_verte" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Lotion Étoile</div><div class="piece-by">by LA LUE VERTE</div></figcaption>
+        </button>
+
+         <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/DCL_Cream.jpg" data-title="Night Booster" data-by="DCL">
+          <figure><img src="assets/img/Product_Viz/DCL_Cream.jpg" alt="DCL_Night_Booster"></figure>
+          <figcaption><div class="piece-title">Night Booster</div><div class="piece-by">by DCL</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Dior_Backstage.jpg" data-title="Backstage" data-by="DIOR">
+          <figure><img src="assets/img/Product_Viz/Dior_Backstage.jpg" alt="Dior_Backstage" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Backstage</div><div class="piece-by">by DIOR</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Aura_Perfect.jpg" data-title="Aura Perfect" data-by="L'ORÉAL">
+          <figure><img src="assets/img/Product_Viz/Aura_Perfect.jpg" alt="Aura_Perfect" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Aura Perfect</div><div class="piece-by">by L'ORÉAL</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg" data-title="Peptide Serum" data-by="ESTÉE LAUDER">
+          <figure><img src="assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg" alt="estee_lauder_serum" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Peptide Serum</div><div class="piece-by">by ESTÉE LAUDER</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Blissfull_Serum.jpg" data-title="Anti-Age Serum" data-by="BLISSFULL+">
+          <figure><img src="assets/img/Product_Viz/Blissfull_Serum.jpg" alt="Blissfull_Serum" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Anti-Age Serum</div><div class="piece-by">by BLISSFULL+</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Clinique_1.jpg" data-title="Moisture Surge" data-by="CLINIQUE">
+          <figure><img src="assets/img/Product_Viz/Clinique_1.jpg" alt="clinique_surge" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Moisture Surge</div><div class="piece-by">by CLINIQUE</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Bang_Olufsen.jpg" data-title="Beosound Balance" data-by="BANG&OLUFSEN">
+          <figure><img src="assets/img/Product_Viz/Bang_Olufsen.jpg" alt="Bang_Olufsen_Speaker" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Beosound Balance</div><div class="piece-by">by BANG&OLUFSEN</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Dior_Sauvage.jpg" data-title="Sauvage" data-by="DIOR">
+          <figure><img src="assets/img/Product_Viz/Dior_Sauvage.jpg" alt="Dior_Sauvage" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Sauvage</div><div class="piece-by">by DIOR</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/CLD_9_3.jpg" data-title="Supplements" data-by="CLD-9">
+          <figure><img src="assets/img/Product_Viz/CLD_9_3.jpg" alt="cld_9" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Supplements</div><div class="piece-by">by CLD-9</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Luxesmith_Watch.jpg" data-title="Wrist watch" data-by="LUXESMITH">
+          <figure><img src="assets/img/Product_Viz/Luxesmith_Watch.jpg" alt="Luxesmith_Watch" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Wrist Watch</div><div class="piece-by">by LUXESMITH</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Evermere_Hydrating_Cream.jpg" data-title="Hydrating Barrier Cream" data-by="EVERMERE">
+          <figure><img src="assets/img/Product_Viz/Evermere_Hydrating_Cream.jpg" alt="Evermere_Hydrating_Cream" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Hydrating Barrier Cream</div><div class="piece-by">by EVERMERE</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Tom_Ford_Ombre.jpg" data-title="Ombré Leather" data-by="TOM FORD">
+          <figure><img src="assets/img/Product_Viz/Tom_Ford_Ombre.jpg" alt="Tom_Ford_Ombre" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Ombré Leather</div><div class="piece-by">by TOM FORD</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Ponds_Flawless.jpg" data-title="Flawless White" data-by="POND'S">
+          <figure><img src="assets/img/Product_Viz/Ponds_Flawless.jpg" alt="Ponds_Flawless" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Flawless White</div><div class="piece-by">by POND'S</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Clay_Lotion.jpg" data-title="Balance Lotion" data-by="CLAY">
+          <figure><img src="assets/img/Product_Viz/Clay_Lotion.jpg" alt="Clay_Lotion" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Balance Lotion</div><div class="piece-by">by CLAY</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Maybelline_Red.jpg" data-title="Creamy Matte Lipstick 640" data-by="MAYBELLINE NEW YORK">
+          <figure><img src="assets/img/Product_Viz/Maybelline_Red.jpg" alt="Maybelline_Red" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Creamy Matte Lipstick 640</div><div class="piece-by">by MAYBELLINE NEW YORK</div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/Valentino_Black.jpg" data-title="Black Uomo" data-by="VALENTINO">
+          <figure><img src="assets/img/Product_Viz/Valentino_Black.jpg" alt="Maybelline_Red" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Black Uomo</div><div class="piece-by">by VALENTINO</div></figcaption>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARCHITECTURAL VISUALIZATION ============ -->
+  <section class="work-section" id="work-arch">
+    <div class="wrap section">
+      <div class="work-head">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title">Architectural Visualization</h2>
+        </div>
+        <div class="carousel-controls">
+          <button class="car-btn" data-car-prev="arch" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="car-btn" data-car-next="arch" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="carousel reveal-on-scroll" id="carousel-arch">
+
+        <button class="car-card" data-lightbox data-group="arch" data-full="assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg" data-title="Scandinavian Bedroom" data-by="">
+          <figure><img src="assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg" alt="scandi_bedroom" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Scandinavian Bedroom</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="arch" data-full="assets/img/Arch_Viz/Chicago_Office.jpg" data-title="Chicago Office" data-by="">
+          <figure><img src="assets/img/Arch_Viz/Chicago_Office.jpg" alt="Chicago_Office" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Chicago Office</div><div class="piece-by"></div></figcaption>
+        </button>
+        <button class="car-card" data-lightbox data-group="arch" data-full="assets/img/Arch_Viz/Reading_Corner.jpg" data-title="Reading Corner" data-by="">
+          <figure><img src="assets/img/Arch_Viz/Reading_Corner.jpg" alt="Reading_Corner" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Reading Corner</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="arch" data-full="assets/img/Arch_Viz/Modern_Bedroom_2.jpg"  data-title="Modern Bedroom" data-by="">
+          <figure><img src="assets/img/Arch_Viz/Modern_Bedroom_2.jpg" alt="modern_bedroom" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Modern Bedroom</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="arch" data-full="assets/img/Arch_Viz/Modern_Kitchen.jpg" data-title="Modern Kitchen" data-by="">
+          <figure><img src="assets/img/Arch_Viz/Modern_Kitchen.jpg" alt="Modern_Kitchen" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Modern Kitchen</div><div class="piece-by"></div></figcaption>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PERSONAL ART ============ -->
+  <section class="work-section" id="work-art">
+    <div class="wrap section">
+      <div class="work-head">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title">Personal Art</h2>
+        </div>
+        <div class="carousel-controls">
+          <button class="car-btn" data-car-prev="art" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+          <button class="car-btn" data-car-next="art" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="carousel reveal-on-scroll" id="carousel-art">
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Solitude.jpg" data-title="Solitude" data-by="">
+          <figure><img src="assets/img/Personal_Art/Solitude.jpg" alt="A lone figure walking down a dystopian city" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Solitude</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Gargantua.jpg" data-title="Gargantua" data-by="">
+          <figure><img src="assets/img/Personal_Art/Gargantua.jpg" alt="Gargantua black hole" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Gargantua</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Obelisk.jpg"  data-title="Monolith" data-by="">
+          <figure><img src="assets/img/Personal_Art/Obelisk.jpg" alt="Giant stone obelisk standing in the desert" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Monolith</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Wanderer.jpg"  data-title="Wanderer" data-by="">
+          <figure><img src="assets/img/Personal_Art/Wanderer.jpg" alt="A lone figure walking in an icy canyon" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Wanderer</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/X_Planet.jpg"  data-title="Planet X" data-by="">
+          <figure><img src="assets/img/Personal_Art/X_Planet.jpg" alt="A sci-fi planet" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Planet X</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Combinator.jpg" data-title="Combinator" data-by="">
+          <figure><img src="assets/img/Personal_Art/Combinator.jpg" alt="Massive decrepit housing block" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Combinator</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Corridor.jpg" data-title="Corridor" data-by="">
+          <figure><img src="assets/img/Personal_Art/Corridor.jpg" alt="Figure walking through an underground corridor" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Corridor</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Forest.jpg" data-title="Forest" data-by="">
+          <figure><img src="assets/img/Personal_Art/Forest.jpg" alt="A moody lush forest" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Forest</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Acrophobia.jpg" data-title="Acrophobia" data-by="">
+          <figure><img src="assets/img/Personal_Art/Acrophobia.jpg" alt="A lone figure standing on top of a building looking down a dystopian city" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Acrophobia</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Tau_Ceti.jpg" data-title="Tau Ceti" data-by="">
+          <figure><img src="assets/img/Personal_Art/Tau_Ceti.jpg" alt="An interpretation of the Tau Ceti planet from the film Hail Mary" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Tau Ceti</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Relic.jpg" data-title="Relic" data-by="">
+          <figure><img src="assets/img/Personal_Art/Relic.jpg" alt="A lone figure standing in front of an old alien relic" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Relic</div><div class="piece-by"></div></figcaption>
+        </button>
+
+        <button class="car-card" data-lightbox data-group="art" data-full="assets/img/Personal_Art/Gates.jpg" data-title="Gates" data-by="">
+          <figure><img src="assets/img/Personal_Art/Gates.jpg" alt="An old huge gate guarding a secret" loading="lazy"></figure>
+          <figcaption><div class="piece-title">Gates</div><div class="piece-by"></div></figcaption>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery dot-grid" id="gallery">
+    <div class="wrap section">
+      <div class="section-head center">
+        <p class="eyebrow">Browse everything</p>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-desc">Every project in one place! </p>
+        <p class="section-desc">Filter by category or click any piece for a closer look.</p>
+      </div>
+
+      <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter gallery">
+        <button class="filter-btn active" data-filter="all">All work</button>
+        <button class="filter-btn" data-filter="product">Product Viz</button>
+        <button class="filter-btn" data-filter="arch">Archviz</button>
+        <button class="filter-btn" data-filter="art">Personal Art</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Fossil_Chronograph_1.jpg" data-title="Chronograph" data-by="">
+          <img src="assets/img/Product_Viz/Fossil_Chronograph_1.jpg" alt="Fossil_Chronograph" loading="lazy"><span class="g-overlay"><span>Chronograph</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg" data-title="Peptide Serum" data-by="">
+          <img src="assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg" alt="Estee_Lauder_Serum_1" loading="lazy"><span class="g-overlay"><span>Peptide Serum</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Obelisk.jpg" data-title="Monolith" data-by="">
+          <img src="assets/img/Personal_Art/Obelisk.jpg" alt="Giant stone obelisk in the desert" loading="lazy"><span class="g-overlay"><span>Monolith</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Forest.jpg" data-title="Forest" data-by="">
+          <img src="assets/img/Personal_Art/Forest.jpg" alt="Forest" loading="lazy"><span class="g-overlay"><span>Forest</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/CLD_9_1.jpg" data-title="CLD-9" data-by="">
+          <img src="assets/img/Product_Viz/CLD_9_1.jpg" alt="CLD_9_Packaging" loading="lazy"><span class="g-overlay"><span>CLD-9</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/UNIT1_Bottle.jpg" data-title="UNIT1 Bottle" data-by="">
+          <img src="assets/img/Product_Viz/UNIT1_Bottle.jpg" alt="Teal smart water bottle, product render" loading="lazy"><span class="g-overlay"><span>UNIT1 Bottle</span></span>
+        </button>
+
+        <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Chicago_Office.jpg" data-title="Chicago Office" data-by="">
+          <img src="assets/img/Arch_Viz/Chicago_Office.jpg" alt="Open plan brick loft office" loading="lazy"><span class="g-overlay"><span>Chicago Office</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Transcendence.jpg" data-title="Transcendence" data-by="">
+          <img src="assets/img/Personal_Art/Transcendence.jpg" alt="Figure walking down a sunlit alley of monoliths" loading="lazy"><span class="g-overlay"><span>Transcendence</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/La_Rue_Verte_1.jpg" data-title="Lotion Étoile" data-by="">
+          <img src="assets/img/Product_Viz/La_Rue_Verte_1.jpg" alt="La Lue Verte lotion bottle" loading="lazy"><span class="g-overlay"><span>Lotion Étoile</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Fossil_Chronograph_2.jpg" data-title="Chronograph" data-by="">
+          <img src="assets/img/Product_Viz/Fossil_Chronograph_2.jpg" alt="Fossil_Chronograph loading="lazy"><span class="g-overlay"><span>Chronograph</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Clinical_Serum.jpg" data-title="Peptide Repair Serum" data-by="">
+          <img src="assets/img/Product_Viz/Clinical_Serum.jpg" alt="Clinical repair serum dropper" loading="lazy"><span class="g-overlay"><span>Peptide Repair Serum</span></span>
+        </button>
+
+        <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg" data-title="Scandinavian Bedroom" data-by="">
+          <img src="assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg" alt="Scandinavian style bedroom" loading="lazy"><span class="g-overlay"><span>Scandinavian Bedroom</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Corridor.jpg" data-title="Corridor" data-by="">
+          <img src="assets/img/Personal_Art/Corridor.jpg" alt="Figure walking through a glowing corridor" loading="lazy"><span class="g-overlay"><span>Corridor</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Clinique_2.jpg" data-title="Moisture Surge" data-by="">
+          <img src="assets/img/Product_Viz/Clinique_2.jpg" alt="Clinique Moisture Surge" loading="lazy"><span class="g-overlay"><span>Moisture Surge</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Evermere_Serum.jpg" data-title="Botanical Glow" data-by="">
+          <img src="assets/img/Product_Viz/Evermere_Serum.jpg" alt="Evermere serum bottle on rope" loading="lazy"><span class="g-overlay"><span>Botanical Glow</span></span>
+        </button>
+
+        <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Reading_Corner.jpg" data-title="Reading Corner" data-by="">
+          <img src="assets/img/Arch_Viz/Reading_Corner.jpg" alt="Sunlit reading nook interior" loading="lazy"><span class="g-overlay"><span>Reading Corner</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Wanderer.jpg" data-title="Wanderer" data-by="">
+          <img src="assets/img/Personal_Art/Wanderer.jpg" alt="Lone figure in a snowy mountain valley" loading="lazy"><span class="g-overlay"><span>Wanderer</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/DCL_Cream.jpg" data-title="Night Booster" data-by="">
+          <img src="assets/img/Product_Viz/DCL_Cream.jpg" alt="DCL night booster bottle reflected in water" loading="lazy"><span class="g-overlay"><span>Night Booster</span></span>
+        </button>
+
+        <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Modern_Bedroom_1.jpg"  data-title="Modern Bedroom" data-by="">
+          <img src="assets/img/Arch_Viz/Modern_Bedroom_1.jpg" alt="Modern grey bedroom" loading="lazy"><span class="g-overlay"><span>Modern Bedroom</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/La_Rue_Verte_2.jpg" data-title="Lotion Étoile" data-by="">
+          <img src="assets/img/Product_Viz/La_Rue_Verte_2.jpg" alt="La Lue Verte lotion bottle" loading="lazy"><span class="g-overlay"><span>Lotion Étoile</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Ponds_Flawless.jpg"  data-title="Flawless White" data-by="">
+          <img src="assets/img/Product_Viz/Ponds_Flawless.jpg" alt="La Lue Verte lotion bottle" loading="lazy"><span class="g-overlay"><span>Flawless White</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Relic.jpg" data-title="Relic" data-by="">
+          <img src="assets/img/Personal_Art/Relic.jpg" alt="Massive glowing cube structure in fog" loading="lazy"><span class="g-overlay"><span>Relic</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/CLD_9_3.jpg"  data-title="CLD-9" data-by="">
+          <img src="assets/img/Product_Viz/CLD_9_3.jpg" alt="CLD_9_Packaging" loading="lazy"><span class="g-overlay"><span>CLD-9</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Fossil_Chronograph_3.jpg" data-title="Chronograph" data-by="">
+          <img src="assets/img/Product_Viz/Fossil_Chronograph_3.jpg" alt="Fossil_Chronograph" loading="lazy"><span class="g-overlay"><span>Chronograph</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/X_Planet.jpg" data-title="Planet-X" data-by="">
+          <img src="assets/img/Personal_Art/X_Planet.jpg" alt="An alien planet" loading="lazy"><span class="g-overlay"><span>Planet-X</span></span>
+        </button>
+
+        <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Modern_Kitchen.jpg" data-title="Modern Kitchen" data-by="">
+          <img src="assets/img/Arch_Viz/Modern_Kitchen.jpg" alt="Modern wood and white kitchen" loading="lazy"><span class="g-overlay"><span>Modern Kitchen</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/La_Rue_Verte_3.jpg" data-title="Lotion Étoile" data-by="">
+          <img src="assets/img/Product_Viz/La_Rue_Verte_3.jpg" alt="La Lue Verte lotion bottle" loading="lazy"><span class="g-overlay"><span>Lotion Étoile</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Clinique_1.jpg" data-title="Moisture Surge" data-by="">
+          <img src="assets/img/Product_Viz/Clinique_1.jpg" alt="Clinique Moisture Surge" loading="lazy"><span class="g-overlay"><span>Moisture Surge</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Blissfull_Serum.jpg" data-title="Anti-Age Serum" data-by="">
+          <img src="assets/img/Product_Viz/Blissfull_Serum.jpg" alt="Blissfull water bottle" loading="lazy"><span class="g-overlay"><span>Anti-Age Serum</span></span>
+        </button>
+
+         <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Gates.jpg" data-title="Gates" data-by="">
+          <img src="assets/img/Personal_Art/Gates.jpg" alt="Acient Gates" loading="lazy"><span class="g-overlay"><span>Gates</span></span>
+        </button>
+        
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Dior_Backstage.jpg" data-title="Backstage" data-by="">
+          <img src="assets/img/Product_Viz/Dior_Backstage.jpg" alt="Dior Backstage foundation bottle" loading="lazy"><span class="g-overlay"><span>Backstage</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Dior_Sauvage.jpg" data-title="Sauvage" data-by="">
+          <img src="assets/img/Product_Viz/Dior_Sauvage.jpg" alt="Sauvage" loading="lazy"><span class="g-overlay"><span>Sauvage</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Luxesmith_Watch.jpg" data-title="Luxesmith Watch" data-by="">
+          <img src="assets/img/Product_Viz/Luxesmith_Watch.jpg" alt="Luxesmith_Watch" loading="lazy"><span class="g-overlay"><span>Luxesmith Watch</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Combinator.jpg" data-title="Combinator" data-by="">
+          <img src="assets/img/Personal_Art/Combinator.jpg" alt="Sunbeams through an old decrepit building" loading="lazy"><span class="g-overlay"><span>Combinator</span></span>
+        </button>
+        
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Bang_Olufsen.jpg" data-title="Beosound Balance" data-by="">
+          <img src="assets/img/Product_Viz/Bang_Olufsen.jpg" alt="Bang_Olufsen_Speaker" loading="lazy"><span class="g-overlay"><span>Beosound Balance</span></span>
+        </button>
+        
+         <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Modern_Bedroom_2.jpg"  data-title="Modern Bedroom" data-by="">
+          <img src="assets/img/Arch_Viz/Modern_Bedroom_2.jpg" alt="Modern grey bedroom" loading="lazy"><span class="g-overlay"><span>Modern Bedroom</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Aura_Perfect.jpg" data-title="Aura Perfect" data-by="">
+          <img src="assets/img/Product_Viz/Aura_Perfect.jpg" alt="Aura_Perfect" loading="lazy"><span class="g-overlay"><span>Aura Perfect</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Clay_Lotion.jpg" data-title="Lotion" data-by="">
+          <img src="assets/img/Product_Viz/Clay_Lotion.jpg" alt="Clay_Lotion" loading="lazy"><span class="g-overlay"><span>Lotion</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/CLD_9_2.jpg" data-title="CLD-9" data-by="">
+          <img src="assets/img/Product_Viz/CLD_9_2.jpg" alt="CLD_9_Packaging" loading="lazy"><span class="g-overlay"><span>CLD-9</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Clinique_3.jpg" data-title="Moisture Surge" data-by="">
+          <img src="assets/img/Product_Viz/Clinique_3.jpg" alt="Clinique Moisture Surge" loading="lazy"><span class="g-overlay"><span>Moisture Surge</span></span>
+        </button>
+
+        <button class="g-item" data-cat="art" data-lightbox data-group="all" data-full="assets/img/Personal_Art/Gargantua.jpg" data-title="Gargantua" data-by="">
+          <img src="assets/img/Personal_Art/Gargantua.jpg" alt="A massive black hole" loading="lazy"><span class="g-overlay"><span>Gargantua</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Evermere_Hydrating_Cream.jpg" data-title="Hydrating Cream" data-by="">
+          <img src="assets/img/Product_Viz/Evermere_Hydrating_Cream.jpg" alt="Evermere_Hydrating_Cream" loading="lazy"><span class="g-overlay"><span>Hydrating Cream</span></span>
+        </button>
+
+        <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Scandinavian_Bedroom_2.jpg"  data-title="Scandinavian Bedroom" data-by="">
+          <img src="assets/img/Arch_Viz/Scandinavian_Bedroom_2.jpg" alt="Scandinavian bedroom" loading="lazy"><span class="g-overlay"><span>Scandinavian Bedroom</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Maybelline_Red.jpg" data-title="Maybelline" data-by="">
+          <img src="assets/img/Product_Viz/Maybelline_Red.jpg" alt="Evermere_Hydrating_Cream" loading="lazy"><span class="g-overlay"><span>Maybelline</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Valentino_Black.jpg" data-title="Valentino" data-by="">
+          <img src="assets/img/Product_Viz/Valentino_Black.jpg" alt="Valentino_Black" loading="lazy"><span class="g-overlay"><span>Valentino</span></span>
+        </button>
+
+        <button class="g-item" data-cat="arch" data-lightbox data-group="all" data-full="assets/img/Arch_Viz/Modern_Bedroom_3.jpg"  data-title="Modern Bedroom" data-by="">
+          <img src="assets/img/Arch_Viz/Modern_Bedroom_3.jpg" alt="Modern grey bedroom with a night desk" loading="lazy"><span class="g-overlay"><span>Modern Bedroom</span></span>
+        </button>
+
+        <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Tom_Ford_Ombre.jpg" data-title="Ombré" data-by="">
+          <img src="assets/img/Product_Viz/Tom_Ford_Ombre.jpg" alt="Tom_Ford_Ombre" loading="lazy"><span class="g-overlay"><span>Ombré</span></span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let's keep in touch</h2>
+        <p class="section-desc">Have a project in mind? Send a message below or reach out directly!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-row">
+            <span class="contact-icon"><img src="assets/icons/phone.svg" alt="Phone Logo"/></span>
+            <a href="tel:0040771378538">0040-771-378-538</a>
+          </div>
+          <div class="contact-info-row">
+            <span class="contact-icon"><img src="assets/icons/email.svg" alt="Phone Logo"/></span>
+            <a href="mailto:kiralynandorludovic@gmail.com">kiralynandorludovic@gmail.com</a>
+          </div>
+
+          <div class="socials">
+            <h3>Socials</h3>
+            <div class="social-row">
+              <a href="https://www.instagram.com/nandor_3d/" aria-label="Instagram" title="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram Logo"/></a>
+              <a href="#" aria-label="Facebook" title="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook Logo"/></a>
+              <a href="https://www.artstation.com/pedrocius" aria-label="ArtStation" title="ArtStation"><img src="assets/icons/artstation.svg" alt="ArtStation"/></a>
+              <a href="https://www.behance.net/kiralynandorludovic" aria-label="Behance" title="Behance"><img src="assets/icons/behance.svg" alt="Behance Logo"/></a>
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn Logo"/></a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <input class="field" type="text" name="name" placeholder="Your name" required autocomplete="name">
+            <input class="field" type="email" name="email" placeholder="Your email" required autocomplete="email">
+          </div>
+          <input class="field" type="text" name="subject" placeholder="Subject" required>
+          <textarea class="field" name="message" placeholder="Enter text..." required></textarea>
+
+          <div class="form-foot">
+            <button type="submit" class="btn btn-primary">
+              Send message
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <span>&copy; <span id="year"></span> Király Nándor. All renders on this site are for portfolio demonstration.</span>
+  <a href="#home" class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  <button class="lightbox-prev" id="lbPrev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <button class="lightbox-next" id="lbNext" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+  <div class="lightbox-inner">
+    <img id="lbImg" src="" alt="">
+    <p class="lightbox-caption" id="lbCaption"></p>
+  </div>
+</div>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <button class="project-close" id="projectClose" aria-label="Close project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+
+  <div class="project-modal-scroll" id="projectScroll">
+    <div class="project-body wrap">
+      <div class="project-head">
+        <p class="eyebrow" id="projCategory"></p>
+        <h3 class="section-title" id="projTitle"></h3>
+        <p class="section-desc" id="projDesc" style="max-width:64ch;"></p>
+      </div>
+
+      <div class="project-viewer">
+        <button class="viewer-arrow viewer-prev" id="projViewPrev" aria-label="Previous image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="viewer-frame">
+          <img id="projHeroImg" src="" alt="">
+          <video id="projHeroVideo" class="is-hidden" controls playsinline preload="metadata"></video>
+          
+            <a class="viewer-expand" id="projViewFull" href="#" target="_blank" rel="noopener" aria-label="Open full resolution image in a new tab">
+                <figure><img src="assets/icons/full-screen-zoom.svg" alt="full-screen-zoom icon" style="width:100%"></figure>
+            </a>
+        </div>
+        <button class="viewer-arrow viewer-next" id="projViewNext" aria-label="Next image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <div class="project-gallery" id="projGallery"></div>
+
+      <div class="project-process">
+        <h4>Process breakdown</h4>
+        <ol class="process-list" id="projProcess"></ol>
+      </div>
+
+      <div class="project-switch">
+        <button class="btn btn-ghost" id="projPrev">← Previous piece</button>
+        <button class="btn btn-ghost" id="projNext">Next piece →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
