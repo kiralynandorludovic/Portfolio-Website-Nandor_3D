@@ -806,25 +806,19 @@ body.nav-open { overflow: hidden; }
   scrollbar-width: none;
 
   --fade-size: 100px;
-  --fade-l: 0px;
   --fade-r: 0px;
 
   --fade-mask: linear-gradient(to right,
-    rgba(0,0,0,.15) 0,
-    rgba(0,0,0,.22) calc(var(--fade-l) * .2), rgba(0,0,0,.4) calc(var(--fade-l) * .4),
-    rgba(0,0,0,.68) calc(var(--fade-l) * .6), rgba(0,0,0,.9) calc(var(--fade-l) * .8),
-    #000 var(--fade-l), #000 calc(100% - var(--fade-r)),
+    #000 0, #000 calc(100% - var(--fade-r)),
     rgba(0,0,0,.9) calc(100% - var(--fade-r) * .8), rgba(0,0,0,.68) calc(100% - var(--fade-r) * .6),
     rgba(0,0,0,.4) calc(100% - var(--fade-r) * .4), rgba(0,0,0,.22) calc(100% - var(--fade-r) * .2),
     rgba(0,0,0,.15) 100%);
   -webkit-mask-image: var(--fade-mask);
   mask-image: var(--fade-mask);
-  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease), --fade-l 0.6s ease, --fade-r 0.6s ease; /* keeps the reveal-on-scroll transition */
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease), --fade-r 0.6s ease; /* keeps the reveal-on-scroll transition */
 }
-.carousel.fade-left { --fade-l: var(--fade-size); }
 .carousel.fade-right { --fade-r: var(--fade-size); }
 /* registered so the fade width can animate instead of snapping */
-@property --fade-l { syntax: "<length>"; inherits: false; initial-value: 0px; }
 @property --fade-r { syntax: "<length>"; inherits: false; initial-value: 0px; }
 .carousel::-webkit-scrollbar { display: none; }
 .car-card {

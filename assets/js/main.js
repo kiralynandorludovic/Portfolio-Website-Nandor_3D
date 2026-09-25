@@ -83,8 +83,7 @@
       const atEnd = track.scrollLeft >= max;
       if (prevBtn) prevBtn.disabled = atStart;
       if (nextBtn) nextBtn.disabled = atEnd;
-      // edge fades hint that there is more to scroll in that direction
-      track.classList.toggle("fade-left", !atStart);
+      // right edge fade hints that there is more to scroll
       track.classList.toggle("fade-right", !atEnd);
     };
     updateButtons();
