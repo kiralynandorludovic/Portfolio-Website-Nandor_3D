@@ -68,7 +68,7 @@
     const key = track.id.replace("carousel-", "");
     const prevBtn = document.querySelector(`[data-car-prev="${key}"]`);
     const nextBtn = document.querySelector(`[data-car-next="${key}"]`);
-    const scrollAmount = () => track.querySelector(".car-card")?.offsetWidth + 22 || 320;
+    const scrollAmount = () => track.firstElementChild?.offsetWidth + (parseFloat(getComputedStyle(track).columnGap) || 0) || 320;
 
     prevBtn?.addEventListener("click", () => {
       track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });

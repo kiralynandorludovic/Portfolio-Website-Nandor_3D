@@ -10,8 +10,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -40,7 +39,7 @@
     <li><a href="#gallery" data-nav><span class="n">07</span>Gallery</a></li>
     <li><a href="#contact" data-nav><span class="n">08</span>Contact</a></li>
   </ul>
-  <p class="nav-overlay-foot">kiralynandorludovic@gmail.com &nbsp;·&nbsp; <a href="tel:0040771378538">0040-771-378-538</a></p>
+  <p class="nav-overlay-foot"><a href="mailto:kiralynandorludovic@gmail.com">kiralynandorludovic@gmail.com</a><span class="sep" aria-hidden="true">·</span><a href="tel:0040771378538">0040-771-378-538</a></p>
 </nav>
 
 <main id="home">
@@ -52,7 +51,7 @@
 
       <h1 class="hero-headline">
         <span class="hi">Hi,</span>
-        <span class="hero-photo"><img src="assets/img/hero-portrait.jpg" alt="Portrait of Király Nándor"></span>
+        <span class="hero-photo"><img src="assets/img/hero-portrait.jpg" alt="Portrait of Király Nándor"fetchpriority="high"></span>
         <span class="name">I'm Nándor</span>
       </h1>
 
@@ -76,7 +75,7 @@
       <div class="about-grid">
         <div class="about-photo-wrap reveal-on-scroll">
           <div class="about-photo">
-            <img src="assets/img/about-portrait.png" alt="Király Nándor sitting, portrait photo">
+            <img src="assets/img/about-portrait.png" alt="Király Nándor sitting, portrait photo" loading="lazy" >
           </div>
           <div class="about-tag"><strong>5+</strong>years in 3D</div>
         </div>
@@ -101,12 +100,12 @@
             <div class="about-fact">
               <h3>Software</h3>
               <div class="software-row">
-              <figure aria-label="Blender" title="Blender"><img src="assets/icons/blender.svg" alt="Instagram Logo"/></figure>
-              <figure aria-label="Maya" title="Maya"><img src="assets/icons/maya.svg" alt="Facebook Logo"/></figure>
-              <figure aria-label="Substance Painter" title="Substance Painter"><img src="assets/icons/adobe-substance.svg" alt="Instagram Logo"/></figure>
-              <figure aria-label="Photoshop" title="Photoshop"><img src="assets/icons/adobe-photoshop.svg" alt="Instagram Logo"/></figure>
-              <figure aria-label="Illustrator" title="Illustrator"><img src="assets/icons/adobe-illustrator.svg" alt="Instagram Logo"/></figure>
-              <figure aria-label="DaVinci Resolve" title="DaVinci Resolve"><img src="assets/icons/davinci-resolve.svg" alt="Instagram Logo"/></figure>
+              <figure aria-label="Blender" title="Blender"><img src="assets/icons/blender.svg" alt="Blender" loading="lazy"/></figure>
+              <figure aria-label="Maya" title="Maya"><img src="assets/icons/maya.svg" alt="Maya" loading="lazy"/></figure>
+              <figure aria-label="Substance Painter" title="Substance Painter"><img src="assets/icons/adobe-substance.svg" alt="Substance Painter" loading="lazy"/></figure>
+              <figure aria-label="Photoshop" title="Photoshop"><img src="assets/icons/adobe-photoshop.svg" alt="Photoshop" loading="lazy"/></figure>
+              <figure aria-label="Illustrator" title="Illustrator"><img src="assets/icons/adobe-illustrator.svg" alt="Illustrator" loading="lazy"/></figure>
+              <figure aria-label="DaVinci Resolve" title="DaVinci Resolve"><img src="assets/icons/davinci-resolve.svg" alt="DaVinci Resolve" loading="lazy"/></figure>
             </div>
             </div>
           </div>
@@ -213,7 +212,7 @@
         </button>
 
          <button class="car-card" data-lightbox data-group="product" data-full="assets/img/Product_Viz/DCL_Cream.jpg" data-title="Night Booster" data-by="DCL">
-          <figure><img src="assets/img/Product_Viz/DCL_Cream.jpg" alt="DCL_Night_Booster"></figure>
+          <figure><img src="assets/img/Product_Viz/DCL_Cream.jpg" alt="DCL_Night_Booster" loading="lazy"></figure>
           <figcaption><div class="piece-title">Night Booster</div><div class="piece-by">by DCL</div></figcaption>
         </button>
 
@@ -476,7 +475,7 @@
         </button>
 
         <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Fossil_Chronograph_2.jpg" data-title="Chronograph" data-by="">
-          <img src="assets/img/Product_Viz/Fossil_Chronograph_2.jpg" alt="Fossil_Chronograph loading="lazy"><span class="g-overlay"><span>Chronograph</span></span>
+          <img src="assets/img/Product_Viz/Fossil_Chronograph_2.jpg" alt="Fossil_Chronograph" loading="lazy"><span class="g-overlay"><span>Chronograph</span></span>
         </button>
 
         <button class="g-item" data-cat="product" data-lightbox data-group="all" data-full="assets/img/Product_Viz/Clinical_Serum.jpg" data-title="Peptide Repair Serum" data-by="">
@@ -643,22 +642,22 @@
       <div class="contact-grid">
         <div>
           <div class="contact-info-row">
-            <span class="contact-icon"><img src="assets/icons/phone.svg" alt="Phone Logo"/></span>
+            <span class="contact-icon"><img src="assets/icons/phone.svg" alt="" loading="lazy"/></span>
             <a href="tel:0040771378538">0040-771-378-538</a>
           </div>
           <div class="contact-info-row">
-            <span class="contact-icon"><img src="assets/icons/email.svg" alt="Phone Logo"/></span>
-            <a href="mailto:kiralynandorludovic@gmail.com">kiralynandorludovic@gmail.com</a>
+            <span class="contact-icon"><img src="assets/icons/email.svg" alt="" loading="lazy"/></span>
+            <a href="mailto:kiralynandorludovic@gmail.com">kiralynandorludovic@<wbr>gmail.com</a>
           </div>
 
           <div class="socials">
             <h3>Socials</h3>
             <div class="social-row">
-              <a href="https://www.instagram.com/nandor_3d/" aria-label="Instagram" title="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram Logo"/></a>
-              <a href="#" aria-label="Facebook" title="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook Logo"/></a>
-              <a href="https://www.artstation.com/pedrocius" aria-label="ArtStation" title="ArtStation"><img src="assets/icons/artstation.svg" alt="ArtStation"/></a>
-              <a href="https://www.behance.net/kiralynandorludovic" aria-label="Behance" title="Behance"><img src="assets/icons/behance.svg" alt="Behance Logo"/></a>
-              <a href="#" aria-label="LinkedIn" title="LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn Logo"/></a>
+              <a href="https://www.instagram.com/nandor_3d/" aria-label="Instagram" title="Instagram"><img src="assets/icons/instagram.svg" alt="" loading="lazy"/></a>
+              <a href="#" aria-label="Facebook" title="Facebook"><img src="assets/icons/facebook.svg" alt="" loading="lazy"/></a>
+              <a href="https://www.artstation.com/pedrocius" aria-label="ArtStation" title="ArtStation"><img src="assets/icons/artstation.svg" alt="" loading="lazy"/></a>
+              <a href="https://www.behance.net/kiralynandorludovic" aria-label="Behance" title="Behance"><img src="assets/icons/behance.svg" alt="" loading="lazy"/></a>
+              <a href="#" aria-label="LinkedIn" title="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" loading="lazy"/></a>
             </div>
           </div>
         </div>
@@ -700,7 +699,7 @@
   <button class="lightbox-prev" id="lbPrev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
   <button class="lightbox-next" id="lbNext" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
   <div class="lightbox-inner">
-    <img id="lbImg" src="" alt="">
+    <img id="lbImg" alt="">
     <p class="lightbox-caption" id="lbCaption"></p>
   </div>
 </div>
@@ -722,11 +721,11 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
         <div class="viewer-frame">
-          <img id="projHeroImg" src="" alt="">
+          <img id="projHeroImg" alt="">
           <video id="projHeroVideo" class="is-hidden" controls playsinline preload="metadata"></video>
           
             <a class="viewer-expand" id="projViewFull" href="#" target="_blank" rel="noopener" aria-label="Open full resolution image in a new tab">
-                <figure><img src="assets/icons/full-screen-zoom.svg" alt="full-screen-zoom icon" style="width:100%"></figure>
+                <figure><img src="assets/icons/full-screen-zoom.svg" alt="" style="width:100%" loading="lazy"></figure>
             </a>
         </div>
         <button class="viewer-arrow viewer-next" id="projViewNext" aria-label="Next image">
