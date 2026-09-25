@@ -627,7 +627,7 @@ body.nav-open { overflow: hidden; }
   color: var(--ink-dim);
   transition: border-color 0.2s var(--ease), color 0.2s var(--ease), background 0.2s var(--ease);
 }
-.viewer-expand figure { margin: 2px; width: 16px; height: 16px; }
+.viewer-expand svg { margin: 2px; width: 16px; height: 16px; }
 .viewer-expand:hover {
   border-color: var(--lime-soft);
   color: var(--lime-soft);
@@ -686,6 +686,8 @@ body.nav-open { overflow: hidden; }
   gap: 10px;
   margin-bottom: 56px;
   overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
   scrollbar-width: none;
 }
 .project-gallery::-webkit-scrollbar { display: none; }
@@ -700,7 +702,8 @@ body.nav-open { overflow: hidden; }
   background: var(--panel);
   transition: border-color 0.2s var(--ease);
 }
-.project-gallery button img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.project-gallery button img,
+.project-gallery button video { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
 .project-gallery button.active { border-color: var(--lime-soft); }
 .project-process h4 {
   font-family: var(--font-display);
@@ -794,6 +797,8 @@ body.nav-open { overflow: hidden; }
   display: flex;
   gap: 22px;
   overflow-x: auto;
+  overflow-y: hidden; /* otherwise overflow-x forces y to auto and the track can be dragged vertically */
+  overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   padding-bottom: 8px;
   margin-right: calc(var(--pad) * -1);
