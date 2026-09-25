@@ -3,6 +3,11 @@
 
   /* =========================================================
      CONTENT DATA — edit the site's cards and images here
+
+     Every image exists in two sizes next to each other:
+       Name.webp        full size (longest side 2560px) — project viewer + lightbox
+       Name_thumb.webp  thumbnail (shortest side 1000px) — cards, grid, strips
+     Always list the full .webp path below; the thumbnail is picked automatically.
      ========================================================= */
 
   const FEATURED_PROJECTS = {
@@ -13,7 +18,7 @@
       cardAlt: "fossil_chronograph",
       category: "Product Visualization",
       description: "This piece was created as a portfolio piece, inspired by the complex design of the Fossil FS6015 Chronograph wrist watch. I knew that re-creating this product as a precise 3D model will be a huge challenge, but I'm very grateful that I've managed to finish this project.",
-      gallery: ["assets/img/Product_Viz/Fossil_Chronograph_1.jpg", "assets/img/Product_Viz/Fossil_Chronograph_2.jpg", "assets/img/Product_Viz/Fossil_Chronograph_3.jpg"],
+      gallery: ["assets/img/Product_Viz/Fossil_Chronograph_1.webp", "assets/img/Product_Viz/Fossil_Chronograph_2.webp", "assets/img/Product_Viz/Fossil_Chronograph_3.webp"],
       process: [
         { title: "Reference", text: "Started from high-end luxury watch commercial photography and dark-mode product displays, focusing on dramatic rim lighting and metallic surface contrast." },
         { title: "Modeling", text: "In my modeling I aimed for extreme precision with complex hard-surface details. I spent significant time on the intricate knurled pattern around the bezel, individual link connections in the metallic wristband, and the detailed sub-dials on the watch face." },
@@ -29,7 +34,7 @@
       cardAlt: "Scandinavian bedroom",
       category: "Architectural Visualization",
       description: "A calm, materials-led bedroom concept with soft daylight, natural wood and linen textures doing most of the storytelling.",
-      gallery: ["assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg", "assets/img/Arch_Viz/Scandinavian_Bedroom_2.jpg"],
+      gallery: ["assets/img/Arch_Viz/Scandinavian_Bedroom_1.webp", "assets/img/Arch_Viz/Scandinavian_Bedroom_2.webp"],
       process: [
         { title: "Reference", text: "Reference pulled from Scandinavian interior photography, focused on soft window light and layered neutral tones." },
         { title: "Modeling", text: "Built the room shell and filled the room with 3D models from Imeshh, keeping proportions true to a realistic room footprint." },
@@ -45,7 +50,7 @@
       cardAlt: "La_Rue_Verte",
       category: "Product Visualization",
       description: "This product visualization was done as a portfolio piece, inspired by the product design of Too Gallus. In my interprertation I tried to use light, rocks and fabrics to keep the serenity feeling that is radiating from this product.",
-      gallery: ["assets/img/Product_Viz/La_Rue_Verte_1.jpg", "assets/img/Product_Viz/La_Rue_Verte_2.jpg", "assets/img/Product_Viz/La_Rue_Verte_3.jpg"],
+      gallery: ["assets/img/Product_Viz/La_Rue_Verte_1.webp", "assets/img/Product_Viz/La_Rue_Verte_2.webp", "assets/img/Product_Viz/La_Rue_Verte_3.webp"],
       process: [
         { title: "Reference", text: "Started from a mood board of nature inspired sceneries and the design posted by Too Gallus on Behance." },
         { title: "Modeling", text: "In my modeling I tried to be close as possible to the real product, the ridges found on the side of the bottle are the main design element and have been created with a lot of care." },
@@ -61,7 +66,7 @@
       cardAlt: "estee_lauder_serum",
       category: "Product Visualization",
       description: "This portfolio piece was inspired by watching some youtube tutorials on soft-body physics simulation. At this stage I was already looking at some Estée Lauder products and when I saw their Peptide Serum products, a lightbulb has switched on in my mind. I tought it would be a great idea to incorporate some shots of soft-body objects coliding and bouncing, contrasting the effect of the serum on human the skin.",
-      gallery: ["assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg", "assets/img/Product_Viz/Estee_Lauder_Serum_2.jpg", "assets/img/Product_Viz/Estee_Lauder_Serum_3.jpg", "assets/img/Product_Viz/Estee Lauder_Test.mp4"],
+      gallery: ["assets/img/Product_Viz/Estee_Lauder_Serum_1.webp", "assets/img/Product_Viz/Estee_Lauder_Serum_2.webp", "assets/img/Product_Viz/Estee_Lauder_Serum_3.webp", "assets/img/Product_Viz/Estee Lauder_Test.mp4"],
       process: [
         { title: "Reference", text: "Started from gathering photos about some high-end cosmetics advertising and luxury skincare campaigns, then focusing on some fluid simulation renders." },
         { title: "Simulation", text: "For the soft-body simulation I used Blender. For the first shot, a high poly sphere was used in combination with some wave displacment textures that were lated animated. For the second shot Blender's native soft body simulation modifiers were used in combination with some physics forces to create the pulling movement." },
@@ -77,7 +82,7 @@
       cardAlt: "CLD_9_Packaging",
       category: "Product Visualization",
       description: "This product visualization was done in colaboration with the supplement brand CLD-9.",
-      gallery: ["assets/img/Product_Viz/CLD_9_1.jpg", "assets/img/Product_Viz/CLD_9_2.jpg", "assets/img/Product_Viz/CLD_9_3.jpg"],
+      gallery: ["assets/img/Product_Viz/CLD_9_1.webp", "assets/img/Product_Viz/CLD_9_2.webp", "assets/img/Product_Viz/CLD_9_3.webp"],
       process: [
         { title: "Reference", text: "The packaging itself was designed by Hortváth Bálint. I wanted to keep the simplicity of the design in my renders, because of this I choose a simple hero shot and two geometric layouts to showcase other personalized designs." },
         { title: "Modeling", text: "In my modeling, I focused on precise product packaging proportions. Key details like the perforated tear here strip, subtle paper folds, and crisp edge bevels were crafted carefully to mimic real-world box construction." },
@@ -93,7 +98,7 @@
       cardAlt: "clinique_surge",
       category: "Product Visualization",
       description: "A portfolio piece inspired by the Clinique Moisture Surge cosmetic product. I wanted to implement more water and liquid elements in my works, this project was a learning curve in implementing water and liquid in my own renderings.",
-      gallery: ["assets/img/Product_Viz/Clinique_1.jpg", "assets/img/Product_Viz/Clinique_2.jpg", "assets/img/Product_Viz/Clinique_3.jpg"],
+      gallery: ["assets/img/Product_Viz/Clinique_1.webp", "assets/img/Product_Viz/Clinique_2.webp", "assets/img/Product_Viz/Clinique_3.webp"],
       process: [
         { title: "Reference", text: "Worked from the client's label artwork and a short brief calling for 'clean but not clinical' — hence the rope styling detail." },
         { title: "Modeling", text: "Precise bottle and cap modeling from provided packaging dielines, checked against real-world dimensions." },
@@ -109,7 +114,7 @@
       cardAlt: "modern_bedroom",
       category: "Architectural Visualization",
       description: "A portfolio piece inspired by the Clinique Moisture Surge cosmetic product. I wanted to implement more water and liquid elements in my works, this project was a learning curve in implementing water and liquid in my own renderings.",
-      gallery: ["assets/img/Arch_Viz/Modern_Bedroom_1.jpg", "assets/img/Arch_Viz/Modern_Bedroom_2.jpg", "assets/img/Arch_Viz/Modern_Bedroom_3.jpg"],
+      gallery: ["assets/img/Arch_Viz/Modern_Bedroom_1.webp", "assets/img/Arch_Viz/Modern_Bedroom_2.webp", "assets/img/Arch_Viz/Modern_Bedroom_3.webp"],
       process: [
         { title: "Reference", text: "Started from modern architectural interior design and high-end residential CGI mood boards, focusing on cozy neutral tones, tactile fabric textures, and subtle ambient cove lighting." },
         { title: "Modeling", text: "In my modeling I focused on soft-body cloth simulation and detailed architectural elements. I spent extra time simulating natural folds and wrinkles on the duvet, pillows, and draped throw blanket, paired with a precise fluted wall paneling system behind the headboard." },
@@ -125,108 +130,105 @@
 
   /* ---------- Work carousels ----------
      One array per section (#carousel-product, -arch, -art).
-     "full" is optional: set it when "src" is a smaller thumbnail and the
-     lightbox should open a different (full resolution) file.
   ----------------------------------------------------------------- */
   const WORK_CAROUSELS = {
     product: [
-      { src: "assets/img/Product_Viz/Fossil_Chronograph_1.jpg", alt: "fossil_chronograph", title: "FS6015 Chronograph", by: "FOSSIL" },
-      { src: "assets/img/Product_Viz/Evermere_Serum.jpg", alt: "Evermere_Serum", title: "Botanical Glow", by: "EVERMERE" },
-      { src: "assets/img/Product_Viz/Clinical_Serum.jpg", alt: "Clinical_Repair_Serum", title: "Peptide Repair Serum", by: "CLINICAL" },
-      { src: "assets/img/Product_Viz/UNIT1_Bottle.jpg", alt: "UNIT1_Bottle", title: "Water Bottle", by: "UNIT 1" },
-      { src: "assets/img/Product_Viz/La_Rue_Verte_1.jpg", alt: "la_rue_verte", title: "Lotion Étoile", by: "LA RUE VERTE" },
-      { src: "assets/img/Product_Viz/DCL_Cream.jpg", alt: "DCL_Night_Booster", title: "Night Booster", by: "DCL" },
-      { src: "assets/img/Product_Viz/Dior_Backstage.jpg", alt: "Dior_Backstage", title: "Backstage", by: "DIOR" },
-      { src: "assets/img/Product_Viz/Aura_Perfect.jpg", alt: "Aura_Perfect", title: "Aura Perfect", by: "L'ORÉAL" },
-      { src: "assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg", alt: "estee_lauder_serum", title: "Peptide Serum", by: "ESTÉE LAUDER" },
-      { src: "assets/img/Product_Viz/Blissfull_Serum.jpg", alt: "Blissfull_Serum", title: "Anti-Age Serum", by: "BLISSFULL+" },
-      { src: "assets/img/Product_Viz/Clinique_1.jpg", alt: "clinique_surge", title: "Moisture Surge", by: "CLINIQUE" },
-      { src: "assets/img/Product_Viz/Bang_Olufsen.jpg", alt: "Bang_Olufsen_Speaker", title: "Beosound Balance", by: "BANG&OLUFSEN" },
-      { src: "assets/img/Product_Viz/Dior_Sauvage.jpg", alt: "Dior_Sauvage", title: "Sauvage", by: "DIOR" },
-      { src: "assets/img/Product_Viz/CLD_9_3.jpg", alt: "cld_9", title: "Supplements", by: "CLD-9" },
-      { src: "assets/img/Product_Viz/Luxesmith_Watch.jpg", alt: "Luxesmith_Watch", title: "Wrist Watch", by: "LUXESMITH" },
-      { src: "assets/img/Product_Viz/Evermere_Hydrating_Cream.jpg", alt: "Evermere_Hydrating_Cream", title: "Hydrating Barrier Cream", by: "EVERMERE" },
-      { src: "assets/img/Product_Viz/Tom_Ford_Ombre.jpg", alt: "Tom_Ford_Ombre", title: "Ombré Leather", by: "TOM FORD" },
-      { src: "assets/img/Product_Viz/Ponds_Flawless.jpg", alt: "Ponds_Flawless", title: "Flawless White", by: "POND'S" },
-      { src: "assets/img/Product_Viz/Clay_Lotion.jpg", alt: "Clay_Lotion", title: "Balance Lotion", by: "CLAY" },
-      { src: "assets/img/Product_Viz/Maybelline_Red.jpg", alt: "Maybelline_Red", title: "Creamy Matte Lipstick 640", by: "MAYBELLINE NEW YORK" },
-      { src: "assets/img/Product_Viz/Valentino_Black.jpg", alt: "Maybelline_Red", title: "Black Uomo", by: "VALENTINO" },
+      { src: "assets/img/Product_Viz/Fossil_Chronograph_1.webp", alt: "fossil_chronograph", title: "FS6015 Chronograph", by: "FOSSIL" },
+      { src: "assets/img/Product_Viz/Evermere_Serum.webp", alt: "Evermere_Serum", title: "Botanical Glow", by: "EVERMERE" },
+      { src: "assets/img/Product_Viz/Clinical_Serum.webp", alt: "Clinical_Repair_Serum", title: "Peptide Repair Serum", by: "CLINICAL" },
+      { src: "assets/img/Product_Viz/UNIT1_Bottle.webp", alt: "UNIT1_Bottle", title: "Water Bottle", by: "UNIT 1" },
+      { src: "assets/img/Product_Viz/La_Rue_Verte_1.webp", alt: "la_rue_verte", title: "Lotion Étoile", by: "LA RUE VERTE" },
+      { src: "assets/img/Product_Viz/DCL_Cream.webp", alt: "DCL_Night_Booster", title: "Night Booster", by: "DCL" },
+      { src: "assets/img/Product_Viz/Dior_Backstage.webp", alt: "Dior_Backstage", title: "Backstage", by: "DIOR" },
+      { src: "assets/img/Product_Viz/Aura_Perfect.webp", alt: "Aura_Perfect", title: "Aura Perfect", by: "L'ORÉAL" },
+      { src: "assets/img/Product_Viz/Estee_Lauder_Serum_1.webp", alt: "estee_lauder_serum", title: "Peptide Serum", by: "ESTÉE LAUDER" },
+      { src: "assets/img/Product_Viz/Blissfull_Serum.webp", alt: "Blissfull_Serum", title: "Anti-Age Serum", by: "BLISSFULL+" },
+      { src: "assets/img/Product_Viz/Clinique_1.webp", alt: "clinique_surge", title: "Moisture Surge", by: "CLINIQUE" },
+      { src: "assets/img/Product_Viz/Bang_Olufsen.webp", alt: "Bang_Olufsen_Speaker", title: "Beosound Balance", by: "BANG&OLUFSEN" },
+      { src: "assets/img/Product_Viz/Dior_Sauvage.webp", alt: "Dior_Sauvage", title: "Sauvage", by: "DIOR" },
+      { src: "assets/img/Product_Viz/CLD_9_3.webp", alt: "cld_9", title: "Supplements", by: "CLD-9" },
+      { src: "assets/img/Product_Viz/Luxesmith_Watch.webp", alt: "Luxesmith_Watch", title: "Wrist Watch", by: "LUXESMITH" },
+      { src: "assets/img/Product_Viz/Evermere_Hydrating_Cream.webp", alt: "Evermere_Hydrating_Cream", title: "Hydrating Barrier Cream", by: "EVERMERE" },
+      { src: "assets/img/Product_Viz/Tom_Ford_Ombre.webp", alt: "Tom_Ford_Ombre", title: "Ombré Leather", by: "TOM FORD" },
+      { src: "assets/img/Product_Viz/Ponds_Flawless.webp", alt: "Ponds_Flawless", title: "Flawless White", by: "POND'S" },
+      { src: "assets/img/Product_Viz/Clay_Lotion.webp", alt: "Clay_Lotion", title: "Balance Lotion", by: "CLAY" },
+      { src: "assets/img/Product_Viz/Maybelline_Red.webp", alt: "Maybelline_Red", title: "Creamy Matte Lipstick 640", by: "MAYBELLINE NEW YORK" },
+      { src: "assets/img/Product_Viz/Valentino_Black.webp", alt: "Maybelline_Red", title: "Black Uomo", by: "VALENTINO" },
     ],
     arch: [
-      { src: "assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg", alt: "scandi_bedroom", title: "Scandinavian Bedroom", by: "" },
-      { src: "assets/img/Arch_Viz/Chicago_Office.jpg", alt: "Chicago_Office", title: "Chicago Office", by: "" },
-      { src: "assets/img/Arch_Viz/Reading_Corner.jpg", alt: "Reading_Corner", title: "Reading Corner", by: "" },
-      { src: "assets/img/Arch_Viz/Modern_Bedroom_2.jpg", alt: "modern_bedroom", title: "Modern Bedroom", by: "" },
-      { src: "assets/img/Arch_Viz/Modern_Kitchen.jpg", alt: "Modern_Kitchen", title: "Modern Kitchen", by: "" },
+      { src: "assets/img/Arch_Viz/Scandinavian_Bedroom_1.webp", alt: "scandi_bedroom", title: "Scandinavian Bedroom", by: "" },
+      { src: "assets/img/Arch_Viz/Chicago_Office.webp", alt: "Chicago_Office", title: "Chicago Office", by: "" },
+      { src: "assets/img/Arch_Viz/Reading_Corner.webp", alt: "Reading_Corner", title: "Reading Corner", by: "" },
+      { src: "assets/img/Arch_Viz/Modern_Bedroom_2.webp", alt: "modern_bedroom", title: "Modern Bedroom", by: "" },
+      { src: "assets/img/Arch_Viz/Modern_Kitchen.webp", alt: "Modern_Kitchen", title: "Modern Kitchen", by: "" },
     ],
     art: [
-      { src: "assets/img/Personal_Art/Solitude.jpg", alt: "A lone figure walking down a dystopian city", title: "Solitude", by: "" },
-      { src: "assets/img/Personal_Art/Gargantua.jpg", alt: "Gargantua black hole", title: "Gargantua", by: "" },
-      { src: "assets/img/Personal_Art/Obelisk.jpg", alt: "Giant stone obelisk standing in the desert", title: "Monolith", by: "" },
-      { src: "assets/img/Personal_Art/Wanderer.jpg", alt: "A lone figure walking in an icy canyon", title: "Wanderer", by: "" },
-      { src: "assets/img/Personal_Art/X_Planet.jpg", alt: "A sci-fi planet", title: "Planet X", by: "" },
-      { src: "assets/img/Personal_Art/Combinator.jpg", alt: "Massive decrepit housing block", title: "Combinator", by: "" },
-      { src: "assets/img/Personal_Art/Corridor.jpg", alt: "Figure walking through an underground corridor", title: "Corridor", by: "" },
-      { src: "assets/img/Personal_Art/Forest.jpg", alt: "A moody lush forest", title: "Forest", by: "" },
-      { src: "assets/img/Personal_Art/Acrophobia.jpg", alt: "A lone figure standing on top of a building looking down a dystopian city", title: "Acrophobia", by: "" },
-      { src: "assets/img/Personal_Art/Tau_Ceti.jpg", alt: "An interpretation of the Tau Ceti planet from the film Hail Mary", title: "Tau Ceti", by: "" },
-      { src: "assets/img/Personal_Art/Relic.jpg", alt: "A lone figure standing in front of an old alien relic", title: "Relic", by: "" },
-      { src: "assets/img/Personal_Art/Gates.jpg", alt: "An old huge gate guarding a secret", title: "Gates", by: "" },
+      { src: "assets/img/Personal_Art/Solitude.webp", alt: "A lone figure walking down a dystopian city", title: "Solitude", by: "" },
+      { src: "assets/img/Personal_Art/Gargantua.webp", alt: "Gargantua black hole", title: "Gargantua", by: "" },
+      { src: "assets/img/Personal_Art/Obelisk.webp", alt: "Giant stone obelisk standing in the desert", title: "Monolith", by: "" },
+      { src: "assets/img/Personal_Art/Wanderer.webp", alt: "A lone figure walking in an icy canyon", title: "Wanderer", by: "" },
+      { src: "assets/img/Personal_Art/X_Planet.webp", alt: "A sci-fi planet", title: "Planet X", by: "" },
+      { src: "assets/img/Personal_Art/Combinator.webp", alt: "Massive decrepit housing block", title: "Combinator", by: "" },
+      { src: "assets/img/Personal_Art/Corridor.webp", alt: "Figure walking through an underground corridor", title: "Corridor", by: "" },
+      { src: "assets/img/Personal_Art/Forest.webp", alt: "A moody lush forest", title: "Forest", by: "" },
+      { src: "assets/img/Personal_Art/Acrophobia.webp", alt: "A lone figure standing on top of a building looking down a dystopian city", title: "Acrophobia", by: "" },
+      { src: "assets/img/Personal_Art/Tau_Ceti.webp", alt: "An interpretation of the Tau Ceti planet from the film Hail Mary", title: "Tau Ceti", by: "" },
+      { src: "assets/img/Personal_Art/Relic.webp", alt: "A lone figure standing in front of an old alien relic", title: "Relic", by: "" },
+      { src: "assets/img/Personal_Art/Gates.webp", alt: "An old huge gate guarding a secret", title: "Gates", by: "" },
     ],
   };
 
   /* ---------- Gallery ----------
      cat must match a filter button's data-filter: "product", "arch" or "art".
-     "full" is optional, same as above.
   ----------------------------------------------------------------- */
   const GALLERY_ITEMS = [
-    { cat: "product", src: "assets/img/Product_Viz/Fossil_Chronograph_1.jpg", alt: "Fossil_Chronograph", title: "Chronograph" },
-    { cat: "product", src: "assets/img/Product_Viz/Estee_Lauder_Serum_1.jpg", alt: "Estee_Lauder_Serum_1", title: "Peptide Serum" },
-    { cat: "art", src: "assets/img/Personal_Art/Obelisk.jpg", alt: "Giant stone obelisk in the desert", title: "Monolith" },
-    { cat: "art", src: "assets/img/Personal_Art/Forest.jpg", alt: "Forest", title: "Forest" },
-    { cat: "product", src: "assets/img/Product_Viz/CLD_9_1.jpg", alt: "CLD_9_Packaging", title: "CLD-9" },
-    { cat: "product", src: "assets/img/Product_Viz/UNIT1_Bottle.jpg", alt: "Teal smart water bottle, product render", title: "UNIT1 Bottle" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Chicago_Office.jpg", alt: "Open plan brick loft office", title: "Chicago Office" },
-    { cat: "art", src: "assets/img/Personal_Art/Transcendence.jpg", alt: "Figure walking down a sunlit alley of monoliths", title: "Transcendence" },
-    { cat: "product", src: "assets/img/Product_Viz/La_Rue_Verte_1.jpg", alt: "La Lue Verte lotion bottle", title: "Lotion Étoile" },
-    { cat: "product", src: "assets/img/Product_Viz/Fossil_Chronograph_2.jpg", alt: "Fossil_Chronograph", title: "Chronograph" },
-    { cat: "product", src: "assets/img/Product_Viz/Clinical_Serum.jpg", alt: "Clinical repair serum dropper", title: "Peptide Repair Serum" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Scandinavian_Bedroom_1.jpg", alt: "Scandinavian style bedroom", title: "Scandinavian Bedroom" },
-    { cat: "art", src: "assets/img/Personal_Art/Corridor.jpg", alt: "Figure walking through a glowing corridor", title: "Corridor" },
-    { cat: "product", src: "assets/img/Product_Viz/Clinique_2.jpg", alt: "Clinique Moisture Surge", title: "Moisture Surge" },
-    { cat: "product", src: "assets/img/Product_Viz/Evermere_Serum.jpg", alt: "Evermere serum bottle on rope", title: "Botanical Glow" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Reading_Corner.jpg", alt: "Sunlit reading nook interior", title: "Reading Corner" },
-    { cat: "art", src: "assets/img/Personal_Art/Wanderer.jpg", alt: "Lone figure in a snowy mountain valley", title: "Wanderer" },
-    { cat: "product", src: "assets/img/Product_Viz/DCL_Cream.jpg", alt: "DCL night booster bottle reflected in water", title: "Night Booster" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Bedroom_1.jpg", alt: "Modern grey bedroom", title: "Modern Bedroom" },
-    { cat: "product", src: "assets/img/Product_Viz/La_Rue_Verte_2.jpg", alt: "La Lue Verte lotion bottle", title: "Lotion Étoile" },
-    { cat: "product", src: "assets/img/Product_Viz/Ponds_Flawless.jpg", alt: "La Lue Verte lotion bottle", title: "Flawless White" },
-    { cat: "art", src: "assets/img/Personal_Art/Relic.jpg", alt: "Massive glowing cube structure in fog", title: "Relic" },
-    { cat: "product", src: "assets/img/Product_Viz/CLD_9_3.jpg", alt: "CLD_9_Packaging", title: "CLD-9" },
-    { cat: "product", src: "assets/img/Product_Viz/Fossil_Chronograph_3.jpg", alt: "Fossil_Chronograph", title: "Chronograph" },
-    { cat: "art", src: "assets/img/Personal_Art/X_Planet.jpg", alt: "An alien planet", title: "Planet-X" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Kitchen.jpg", alt: "Modern wood and white kitchen", title: "Modern Kitchen" },
-    { cat: "product", src: "assets/img/Product_Viz/La_Rue_Verte_3.jpg", alt: "La Lue Verte lotion bottle", title: "Lotion Étoile" },
-    { cat: "product", src: "assets/img/Product_Viz/Clinique_1.jpg", alt: "Clinique Moisture Surge", title: "Moisture Surge" },
-    { cat: "product", src: "assets/img/Product_Viz/Blissfull_Serum.jpg", alt: "Blissfull water bottle", title: "Anti-Age Serum" },
-    { cat: "art", src: "assets/img/Personal_Art/Gates.jpg", alt: "Acient Gates", title: "Gates" },
-    { cat: "product", src: "assets/img/Product_Viz/Dior_Backstage.jpg", alt: "Dior Backstage foundation bottle", title: "Backstage" },
-    { cat: "product", src: "assets/img/Product_Viz/Dior_Sauvage.jpg", alt: "Sauvage", title: "Sauvage" },
-    { cat: "product", src: "assets/img/Product_Viz/Luxesmith_Watch.jpg", alt: "Luxesmith_Watch", title: "Luxesmith Watch" },
-    { cat: "art", src: "assets/img/Personal_Art/Combinator.jpg", alt: "Sunbeams through an old decrepit building", title: "Combinator" },
-    { cat: "product", src: "assets/img/Product_Viz/Bang_Olufsen.jpg", alt: "Bang_Olufsen_Speaker", title: "Beosound Balance" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Bedroom_2.jpg", alt: "Modern grey bedroom", title: "Modern Bedroom" },
-    { cat: "product", src: "assets/img/Product_Viz/Aura_Perfect.jpg", alt: "Aura_Perfect", title: "Aura Perfect" },
-    { cat: "product", src: "assets/img/Product_Viz/Clay_Lotion.jpg", alt: "Clay_Lotion", title: "Lotion" },
-    { cat: "product", src: "assets/img/Product_Viz/CLD_9_2.jpg", alt: "CLD_9_Packaging", title: "CLD-9" },
-    { cat: "product", src: "assets/img/Product_Viz/Clinique_3.jpg", alt: "Clinique Moisture Surge", title: "Moisture Surge" },
-    { cat: "art", src: "assets/img/Personal_Art/Gargantua.jpg", alt: "A massive black hole", title: "Gargantua" },
-    { cat: "product", src: "assets/img/Product_Viz/Evermere_Hydrating_Cream.jpg", alt: "Evermere_Hydrating_Cream", title: "Hydrating Cream" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Scandinavian_Bedroom_2.jpg", alt: "Scandinavian bedroom", title: "Scandinavian Bedroom" },
-    { cat: "product", src: "assets/img/Product_Viz/Maybelline_Red.jpg", alt: "Evermere_Hydrating_Cream", title: "Maybelline" },
-    { cat: "product", src: "assets/img/Product_Viz/Valentino_Black.jpg", alt: "Valentino_Black", title: "Valentino" },
-    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Bedroom_3.jpg", alt: "Modern grey bedroom with a night desk", title: "Modern Bedroom" },
-    { cat: "product", src: "assets/img/Product_Viz/Tom_Ford_Ombre.jpg", alt: "Tom_Ford_Ombre", title: "Ombré" },
+    { cat: "product", src: "assets/img/Product_Viz/Fossil_Chronograph_1.webp", alt: "Fossil_Chronograph", title: "Chronograph" },
+    { cat: "product", src: "assets/img/Product_Viz/Estee_Lauder_Serum_1.webp", alt: "Estee_Lauder_Serum_1", title: "Peptide Serum" },
+    { cat: "art", src: "assets/img/Personal_Art/Obelisk.webp", alt: "Giant stone obelisk in the desert", title: "Monolith" },
+    { cat: "art", src: "assets/img/Personal_Art/Forest.webp", alt: "Forest", title: "Forest" },
+    { cat: "product", src: "assets/img/Product_Viz/CLD_9_1.webp", alt: "CLD_9_Packaging", title: "CLD-9" },
+    { cat: "product", src: "assets/img/Product_Viz/UNIT1_Bottle.webp", alt: "Teal smart water bottle, product render", title: "UNIT1 Bottle" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Chicago_Office.webp", alt: "Open plan brick loft office", title: "Chicago Office" },
+    { cat: "art", src: "assets/img/Personal_Art/Transcendence.webp", alt: "Figure walking down a sunlit alley of monoliths", title: "Transcendence" },
+    { cat: "product", src: "assets/img/Product_Viz/La_Rue_Verte_1.webp", alt: "La Lue Verte lotion bottle", title: "Lotion Étoile" },
+    { cat: "product", src: "assets/img/Product_Viz/Fossil_Chronograph_2.webp", alt: "Fossil_Chronograph", title: "Chronograph" },
+    { cat: "product", src: "assets/img/Product_Viz/Clinical_Serum.webp", alt: "Clinical repair serum dropper", title: "Peptide Repair Serum" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Scandinavian_Bedroom_1.webp", alt: "Scandinavian style bedroom", title: "Scandinavian Bedroom" },
+    { cat: "art", src: "assets/img/Personal_Art/Corridor.webp", alt: "Figure walking through a glowing corridor", title: "Corridor" },
+    { cat: "product", src: "assets/img/Product_Viz/Clinique_2.webp", alt: "Clinique Moisture Surge", title: "Moisture Surge" },
+    { cat: "product", src: "assets/img/Product_Viz/Evermere_Serum.webp", alt: "Evermere serum bottle on rope", title: "Botanical Glow" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Reading_Corner.webp", alt: "Sunlit reading nook interior", title: "Reading Corner" },
+    { cat: "art", src: "assets/img/Personal_Art/Wanderer.webp", alt: "Lone figure in a snowy mountain valley", title: "Wanderer" },
+    { cat: "product", src: "assets/img/Product_Viz/DCL_Cream.webp", alt: "DCL night booster bottle reflected in water", title: "Night Booster" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Bedroom_1.webp", alt: "Modern grey bedroom", title: "Modern Bedroom" },
+    { cat: "product", src: "assets/img/Product_Viz/La_Rue_Verte_2.webp", alt: "La Lue Verte lotion bottle", title: "Lotion Étoile" },
+    { cat: "product", src: "assets/img/Product_Viz/Ponds_Flawless.webp", alt: "La Lue Verte lotion bottle", title: "Flawless White" },
+    { cat: "art", src: "assets/img/Personal_Art/Relic.webp", alt: "Massive glowing cube structure in fog", title: "Relic" },
+    { cat: "product", src: "assets/img/Product_Viz/CLD_9_3.webp", alt: "CLD_9_Packaging", title: "CLD-9" },
+    { cat: "product", src: "assets/img/Product_Viz/Fossil_Chronograph_3.webp", alt: "Fossil_Chronograph", title: "Chronograph" },
+    { cat: "art", src: "assets/img/Personal_Art/X_Planet.webp", alt: "An alien planet", title: "Planet-X" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Kitchen.webp", alt: "Modern wood and white kitchen", title: "Modern Kitchen" },
+    { cat: "product", src: "assets/img/Product_Viz/La_Rue_Verte_3.webp", alt: "La Lue Verte lotion bottle", title: "Lotion Étoile" },
+    { cat: "product", src: "assets/img/Product_Viz/Clinique_1.webp", alt: "Clinique Moisture Surge", title: "Moisture Surge" },
+    { cat: "product", src: "assets/img/Product_Viz/Blissfull_Serum.webp", alt: "Blissfull water bottle", title: "Anti-Age Serum" },
+    { cat: "art", src: "assets/img/Personal_Art/Gates.webp", alt: "Acient Gates", title: "Gates" },
+    { cat: "product", src: "assets/img/Product_Viz/Dior_Backstage.webp", alt: "Dior Backstage foundation bottle", title: "Backstage" },
+    { cat: "product", src: "assets/img/Product_Viz/Dior_Sauvage.webp", alt: "Sauvage", title: "Sauvage" },
+    { cat: "product", src: "assets/img/Product_Viz/Luxesmith_Watch.webp", alt: "Luxesmith_Watch", title: "Luxesmith Watch" },
+    { cat: "art", src: "assets/img/Personal_Art/Combinator.webp", alt: "Sunbeams through an old decrepit building", title: "Combinator" },
+    { cat: "product", src: "assets/img/Product_Viz/Bang_Olufsen.webp", alt: "Bang_Olufsen_Speaker", title: "Beosound Balance" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Bedroom_2.webp", alt: "Modern grey bedroom", title: "Modern Bedroom" },
+    { cat: "product", src: "assets/img/Product_Viz/Aura_Perfect.webp", alt: "Aura_Perfect", title: "Aura Perfect" },
+    { cat: "product", src: "assets/img/Product_Viz/Clay_Lotion.webp", alt: "Clay_Lotion", title: "Lotion" },
+    { cat: "product", src: "assets/img/Product_Viz/CLD_9_2.webp", alt: "CLD_9_Packaging", title: "CLD-9" },
+    { cat: "product", src: "assets/img/Product_Viz/Clinique_3.webp", alt: "Clinique Moisture Surge", title: "Moisture Surge" },
+    { cat: "art", src: "assets/img/Personal_Art/Gargantua.webp", alt: "A massive black hole", title: "Gargantua" },
+    { cat: "product", src: "assets/img/Product_Viz/Evermere_Hydrating_Cream.webp", alt: "Evermere_Hydrating_Cream", title: "Hydrating Cream" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Scandinavian_Bedroom_2.webp", alt: "Scandinavian bedroom", title: "Scandinavian Bedroom" },
+    { cat: "product", src: "assets/img/Product_Viz/Maybelline_Red.webp", alt: "Evermere_Hydrating_Cream", title: "Maybelline" },
+    { cat: "product", src: "assets/img/Product_Viz/Valentino_Black.webp", alt: "Valentino_Black", title: "Valentino" },
+    { cat: "arch", src: "assets/img/Arch_Viz/Modern_Bedroom_3.webp", alt: "Modern grey bedroom with a night desk", title: "Modern Bedroom" },
+    { cat: "product", src: "assets/img/Product_Viz/Tom_Ford_Ombre.webp", alt: "Tom_Ford_Ombre", title: "Ombré" },
   ];
 
   /* ---------- Contact form ----------
@@ -246,9 +248,10 @@
   // gallery entries are either a path string or { src, poster }
   const mediaSrc = (m) => (typeof m === "string" ? m : m.src);
   const isVideo = (m) => /\.(mp4|webm|mov)$/i.test(mediaSrc(m));
+  const thumb = (src) => src.replace(/\.webp$/i, "_thumb.webp");
   const coverImage = (gallery) => {
     const first = gallery.find((m) => !isVideo(m) || m.poster) || gallery[0];
-    return isVideo(first) ? first.poster : mediaSrc(first);
+    return thumb(isVideo(first) ? first.poster : mediaSrc(first));
   };
 
   const ARROW_ICON = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
@@ -269,8 +272,8 @@
     Object.entries(WORK_CAROUSELS).forEach(([key, list]) => {
       const track = document.getElementById(`carousel-${key}`);
       if (!track) return;
-      track.innerHTML = list.map((it) => `<button class="car-card" data-lightbox data-group="${esc(key)}" data-full="${esc(it.full || it.src)}" data-title="${esc(it.title)}" data-by="${esc(it.by || "")}">
-          <figure><img src="${esc(it.src)}" alt="${esc(it.alt)}" loading="lazy"></figure>
+      track.innerHTML = list.map((it) => `<button class="car-card" data-lightbox data-group="${esc(key)}" data-full="${esc(it.src)}" data-title="${esc(it.title)}" data-by="${esc(it.by || "")}">
+          <figure><img src="${esc(thumb(it.src))}" alt="${esc(it.alt)}" loading="lazy"></figure>
           <figcaption><div class="piece-title">${esc(it.title)}</div><div class="piece-by">${it.by ? `by ${esc(it.by)}` : ""}</div></figcaption>
         </button>`).join("");
     });
@@ -279,8 +282,8 @@
   function renderGallery() {
     const grid = document.getElementById("galleryGrid");
     if (!grid) return;
-    grid.innerHTML = GALLERY_ITEMS.map((it) => `<button class="g-item" data-cat="${esc(it.cat)}" data-lightbox data-group="all" data-full="${esc(it.full || it.src)}" data-title="${esc(it.title)}" data-by="">
-          <img src="${esc(it.src)}" alt="${esc(it.alt)}" loading="lazy"><span class="g-overlay"><span>${esc(it.title)}</span></span>
+    grid.innerHTML = GALLERY_ITEMS.map((it) => `<button class="g-item" data-cat="${esc(it.cat)}" data-lightbox data-group="all" data-full="${esc(it.src)}" data-title="${esc(it.title)}" data-by="">
+          <img src="${esc(thumb(it.src))}" alt="${esc(it.alt)}" loading="lazy"><span class="g-overlay"><span>${esc(it.title)}</span></span>
         </button>`).join("");
   }
 
@@ -487,7 +490,6 @@
   let activeProjectId = null;
   let lastFocusedFeatured = null;
   let activeGallery = [];
-  let activeGalleryFull = [];
   let activeImageIndex = 0;
 
   function showGalleryImage(index) {
@@ -509,7 +511,7 @@
       projHeroVideo.removeAttribute("src");
       projHeroVideo.load(); // drop the buffered video
     }
-    projViewFull.href = mediaSrc(activeGalleryFull[activeImageIndex] || item);
+    projViewFull.href = src;
     projViewFull.setAttribute("aria-label", video ? "Open video in a new tab" : "Open full resolution image in a new tab");
     projGallery.querySelectorAll("button").forEach((b, i) => {
       b.classList.toggle("active", i === activeImageIndex);
@@ -521,7 +523,6 @@
     if (!data) return;
     activeProjectId = id;
     activeGallery = data.gallery;
-    activeGalleryFull = data.galleryFull || data.gallery;
     activeImageIndex = 0;
 
     projCategory.textContent = data.category;
@@ -538,11 +539,11 @@
       btn.className = i === 0 ? "active" : "";
       const label = `${esc(data.title)} — view ${i + 1}`;
       if (!isVideo(item)) {
-        btn.innerHTML = `<img src="${esc(item)}" alt="${label}" loading="lazy">`;
+        btn.innerHTML = `<img src="${esc(thumb(item))}" alt="${label}" loading="lazy">`;
       } else {
         // without a poster, show the video's first frame as the thumbnail
         const thumb = item.poster
-          ? `<img src="${esc(item.poster)}" alt="${label} (video)" loading="lazy">`
+          ? `<img src="${esc(thumb(item.poster))}" alt="${label} (video)" loading="lazy">`
           : `<video src="${esc(mediaSrc(item))}#t=0.1" muted playsinline preload="metadata" aria-label="${label} (video)"></video>`;
         btn.innerHTML = `${thumb}<span class="thumb-badge">${PLAY_ICON}</span>`;
       }
