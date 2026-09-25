@@ -247,6 +247,18 @@
   const mediaSrc = (m) => (typeof m === "string" ? m : m.src);
   const isVideo = (m) => /\.(mp4|webm|mov)$/i.test(mediaSrc(m));
   const thumb = (src) => src.replace(/\.webp$/i, "_thumb.webp");
+
+  // Swap the old image out immediately: show the (already cached) thumbnail,
+  // then replace it with the full-size file once that has downloaded.
+  function setImageProgressive(img, src) {
+    img.dataset.want = src;
+    const placeholder = thumb(src);
+    if (placeholder === src) { img.src = src; return; }
+    img.src = placeholder;
+    const full = new Image();
+    full.onload = () => { if (img.dataset.want === src) img.src = src; };
+    full.src = src;
+  }
   const coverImage = (gallery) => {
     const first = gallery.find((m) => !isVideo(m) || m.poster) || gallery[0];
     return thumb(isVideo(first) ? first.poster : mediaSrc(first));
@@ -422,7 +434,7 @@
     const el = currentGroup[index];
     if (!el) return;
     currentIndex = index;
-    lbImg.src = el.dataset.full;
+    setImageProgressive(lbImg, el.dataset.full);
     lbImg.alt = el.dataset.title || "";
     lbCaption.textContent = [el.dataset.title, el.dataset.by].filter(Boolean).join(" — ");
   }
@@ -504,8 +516,9 @@
       projHeroVideo.poster = item.poster || "";
       projHeroVideo.src = src;
       projHeroImg.removeAttribute("src");
+      delete projHeroImg.dataset.want; // cancel a pending full-size swap
     } else {
-      projHeroImg.src = src;
+      setImageProgressive(projHeroImg, src);
       projHeroVideo.removeAttribute("src");
       projHeroVideo.load(); // drop the buffered video
     }
