@@ -799,7 +799,28 @@ body.nav-open { overflow: hidden; }
   margin-right: calc(var(--pad) * -1);
   padding-right: var(--pad);
   scrollbar-width: none;
+
+  --fade-size: 100px;
+  --fade-l: 0px;
+  --fade-r: 0px;
+
+  --fade-mask: linear-gradient(to right,
+    rgba(0,0,0,.15) 0,
+    rgba(0,0,0,.22) calc(var(--fade-l) * .2), rgba(0,0,0,.4) calc(var(--fade-l) * .4),
+    rgba(0,0,0,.68) calc(var(--fade-l) * .6), rgba(0,0,0,.9) calc(var(--fade-l) * .8),
+    #000 var(--fade-l), #000 calc(100% - var(--fade-r)),
+    rgba(0,0,0,.9) calc(100% - var(--fade-r) * .8), rgba(0,0,0,.68) calc(100% - var(--fade-r) * .6),
+    rgba(0,0,0,.4) calc(100% - var(--fade-r) * .4), rgba(0,0,0,.22) calc(100% - var(--fade-r) * .2),
+    rgba(0,0,0,.15) 100%);
+  -webkit-mask-image: var(--fade-mask);
+  mask-image: var(--fade-mask);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease), --fade-l 0.6s ease, --fade-r 0.6s ease; /* keeps the reveal-on-scroll transition */
 }
+.carousel.fade-left { --fade-l: var(--fade-size); }
+.carousel.fade-right { --fade-r: var(--fade-size); }
+/* registered so the fade width can animate instead of snapping */
+@property --fade-l { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --fade-r { syntax: "<length>"; inherits: false; initial-value: 0px; }
 .carousel::-webkit-scrollbar { display: none; }
 .car-card {
   scroll-snap-align: start;
@@ -1057,7 +1078,7 @@ textarea.field { resize: vertical; min-height: 140px; }
   .feat-info { left: 18px; right: 18px; bottom: 18px; }
   .car-card { flex-basis: 220px; }
   .car-card .piece-title { font-size: 15.5px; }
-  .carousel { gap: 14px; }
+  .carousel { gap: 14px; --fade-size: 48px; }
   .filter-btn { padding: 8px 14px; font-size: 12.5px; }
   .gallery-grid { gap: 10px; }
   .contact-info-row { gap: 12px; }

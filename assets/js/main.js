@@ -79,8 +79,13 @@
 
     const updateButtons = () => {
       const max = track.scrollWidth - track.clientWidth - 4;
-      if (prevBtn) prevBtn.disabled = track.scrollLeft <= 4;
-      if (nextBtn) nextBtn.disabled = track.scrollLeft >= max;
+      const atStart = track.scrollLeft <= 4;
+      const atEnd = track.scrollLeft >= max;
+      if (prevBtn) prevBtn.disabled = atStart;
+      if (nextBtn) nextBtn.disabled = atEnd;
+      // edge fades hint that there is more to scroll in that direction
+      track.classList.toggle("fade-left", !atStart);
+      track.classList.toggle("fade-right", !atEnd);
     };
     updateButtons();
     track.addEventListener("scroll", updateButtons, { passive: true });
