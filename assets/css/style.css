@@ -864,7 +864,23 @@ body.nav-open { overflow: hidden; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 18px;
+
+  /* bottom fade that follows the viewport edge while more of the grid is below the fold;
+     --fade-at (distance from the grid top to the viewport bottom) is set from JS */
+  --fade-size: 160px;
+  --fade-b: 0px;
+  --fade-at: 100000px;
+  --fade-mask: linear-gradient(to bottom,
+    #000 0, #000 calc(var(--fade-at) - var(--fade-b)),
+    rgba(0,0,0,.9) calc(var(--fade-at) - var(--fade-b) * .8), rgba(0,0,0,.68) calc(var(--fade-at) - var(--fade-b) * .6),
+    rgba(0,0,0,.4) calc(var(--fade-at) - var(--fade-b) * .4), rgba(0,0,0,.22) calc(var(--fade-at) - var(--fade-b) * .2),
+    rgba(0,0,0,.15) var(--fade-at));
+  -webkit-mask-image: var(--fade-mask);
+  mask-image: var(--fade-mask);
+  transition: --fade-b 0.6s ease;
 }
+.gallery-grid.fade-bottom { --fade-b: var(--fade-size); }
+@property --fade-b { syntax: "<length>"; inherits: false; initial-value: 0px; }
 .g-item {
   border: none;
   background: var(--panel);
@@ -1185,7 +1201,7 @@ textarea.field { resize: vertical; min-height: 140px; }
   .car-card .piece-title { font-size: 15.5px; }
   .carousel { gap: 14px; --fade-size: 48px; }
   .filter-btn { padding: 8px 14px; font-size: 12.5px; }
-  .gallery-grid { gap: 10px; }
+  .gallery-grid { gap: 10px; --fade-size: 100px; }
   .contact-info-row { gap: 12px; }
   .contact-info-row a, .contact-info-row span.static { font-size: 14px; }
   .project-process h4 { font-size: 18px; }

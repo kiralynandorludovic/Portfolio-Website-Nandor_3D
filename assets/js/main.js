@@ -409,7 +409,33 @@
       const show = filter === "all" || item.dataset.cat === filter;
       item.classList.toggle("hidden", !show);
     });
+    updateGalleryFade();
   });
+
+  /* ---------- Gallery bottom fade ---------- */
+  const galleryGrid = document.getElementById("galleryGrid");
+  let galleryFadeQueued = false;
+
+  function updateGalleryFade() {
+    if (!galleryGrid) return;
+    const rect = galleryGrid.getBoundingClientRect();
+    const viewportBottom = window.innerHeight;
+    // pin the fade to the viewport bottom, shown only while part of the grid is still below it
+    galleryGrid.style.setProperty("--fade-at", `${viewportBottom - rect.top}px`);
+    galleryGrid.classList.toggle("fade-bottom", rect.bottom > viewportBottom + 4);
+  }
+
+  const queueGalleryFade = () => {
+    if (galleryFadeQueued) return;
+    galleryFadeQueued = true;
+    requestAnimationFrame(() => {
+      galleryFadeQueued = false;
+      updateGalleryFade();
+    });
+  };
+  updateGalleryFade();
+  window.addEventListener("scroll", queueGalleryFade, { passive: true });
+  window.addEventListener("resize", queueGalleryFade);
 
   /* ---------- Lightbox ---------- */
   const lightbox = document.getElementById("lightbox");
