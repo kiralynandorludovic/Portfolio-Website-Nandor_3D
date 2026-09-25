@@ -240,23 +240,34 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-row">
-            <input class="field" type="text" name="name" placeholder="Your name" required autocomplete="name">
-            <input class="field" type="email" name="email" placeholder="Your email" required autocomplete="email">
-          </div>
-          <input class="field" type="text" name="subject" placeholder="Subject" required>
-          <textarea class="field" name="message" placeholder="Enter text..." required></textarea>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="13ed58c2-ae14-4fae-b0fe-a538fc1b499f">
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form-row">
+              <input class="field" type="text" name="name" placeholder="Your name" required autocomplete="name" aria-label="Your name">
+              <input class="field" type="email" name="email" placeholder="Your email" required autocomplete="email" aria-label="Your email">
+            </div>
+            <input class="field" type="text" name="subject" placeholder="Subject" required aria-label="Subject">
+            <textarea class="field" name="message" placeholder="Enter text..." required aria-label="Message"></textarea>
 
-          <div class="form-foot">
-            <button type="submit" class="btn btn-primary">
-              Send message
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-            </button>
-            <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
-          </div>
+            <div class="form-foot">
+              <button type="submit" class="btn btn-primary btn-send">
+                <span class="btn-label">Send message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
 
-        </form>
+          <div class="form-success" id="formSuccess" tabindex="-1" hidden>
+            <span class="form-success-badge"><span class="pulse"></span>Message delivered</span>
+            <h3 class="form-success-title">Thanks<span id="formSuccessName"></span> — it's on its way.</h3>
+            <p class="form-success-text">Your message landed in my inbox — I'll get back to you soon.</p>
+            <button type="button" class="btn btn-ghost" id="formReset">Send another message</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>

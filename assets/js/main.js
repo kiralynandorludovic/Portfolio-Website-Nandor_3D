@@ -232,12 +232,10 @@
   ];
 
   /* ---------- Contact form ----------
-     Wire this up to Formspree (or any form backend) in 3 steps:
-     1. Create a free form at https://formspree.io
-     2. Replace YOUR_FORM_ID below with the ID they give you
-     3. Done — submissions will arrive by email, no server needed
+     Submissions go to Web3Forms and arrive by email. The access key
+     lives in a hidden input inside #contactForm in index.html.
   --------------------------------------------------------------- */
-  const FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+  const FORM_ENDPOINT = "https://api.web3forms.com/submit";
 
   /* =========================================================
      RENDER — build the cards first, so everything below finds them
@@ -611,27 +609,60 @@
   /* ---------- Contact form ---------- */
   const form = document.getElementById("contactForm");
   const status = document.getElementById("formStatus");
+  const success = document.getElementById("formSuccess");
+  const successName = document.getElementById("formSuccessName");
+  const resetBtn = document.getElementById("formReset");
+  const CONTACT_EMAIL = "kiralynandorludovic@gmail.com";
+  const FIELD_LABELS = { name: "your name", email: "your email", subject: "a subject", message: "a message" };
+
+  const setStatus = (html, type = "") => {
+    status.className = "form-status";
+    status.innerHTML = html ? `<span>${html}</span>` : "";
+    if (!html) return;
+    if (type) status.classList.add(type);
+    requestAnimationFrame(() => status.classList.add("show"));
+  };
+
+  const fieldError = (field) => {
+    if (field.validity.valueMissing) return `Please add ${FIELD_LABELS[field.name]}.`;
+    if (field.validity.typeMismatch) return "That email address doesn't look quite right.";
+    return "Please check the highlighted field.";
+  };
+
+  form?.querySelectorAll(".field").forEach((field) => {
+    field.addEventListener("input", () => {
+      if (!field.classList.contains("invalid") || !field.checkValidity()) return;
+      field.classList.remove("invalid");
+      field.removeAttribute("aria-invalid");
+      if (!form.querySelector(".field.invalid")) setStatus("");
+    });
+  });
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
-    status.textContent = "";
-    status.className = "form-status";
+    setStatus("");
 
-    if (!form.checkValidity()) {
-      status.textContent = "Please fill in every field before sending.";
-      status.classList.add("err");
-      return;
-    }
-
-    if (FORM_ENDPOINT.includes("YOUR_FORM_ID")) {
-      status.textContent = "Contact form isn't connected yet — email me directly instead, thanks!";
-      status.classList.add("err");
+    const fields = [...form.querySelectorAll(".field")];
+    fields.forEach((f) => {
+      const bad = !f.checkValidity();
+      f.classList.toggle("invalid", bad);
+      f.toggleAttribute("aria-invalid", bad);
+    });
+    const firstBad = fields.find((f) => !f.checkValidity());
+    if (firstBad) {
+      setStatus(esc(fieldError(firstBad)), "err");
+      firstBad.classList.remove("shake");
+      void firstBad.offsetWidth; // restart the animation
+      firstBad.classList.add("shake");
+      firstBad.focus();
       return;
     }
 
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
-    status.textContent = "Sending…";
+    submitBtn.classList.add("is-loading");
+    submitBtn.setAttribute("aria-busy", "true");
+    setStatus("Sending your message…");
 
     try {
       const res = await fetch(FORM_ENDPOINT, {
@@ -639,18 +670,37 @@
         headers: { Accept: "application/json" },
         body: new FormData(form),
       });
-      if (res.ok) {
-        status.textContent = "Message sent — thank you! I'll reply soon.";
-        status.classList.add("ok");
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || "Request failed");
+
+      const name = form.elements.name.value.trim().split(/\s+/)[0];
+      successName.textContent = name ? `, ${name}` : "";
+      form.classList.add("leaving");
+      setTimeout(() => {
+        form.hidden = true;
+        form.classList.remove("leaving");
         form.reset();
-      } else {
-        throw new Error("Request failed");
-      }
+        setStatus("");
+        success.hidden = false;
+        success.focus();
+      }, 350);
     } catch (err) {
-      status.textContent = "Something went wrong — please email me directly.";
-      status.classList.add("err");
+      const offline = !navigator.onLine;
+      setStatus(
+        (offline ? "You seem to be offline — check your connection and try again," : "Couldn't send that one. Try again in a moment,") +
+          ` or email me at <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`,
+        "err"
+      );
     } finally {
       submitBtn.disabled = false;
+      submitBtn.classList.remove("is-loading");
+      submitBtn.removeAttribute("aria-busy");
     }
+  });
+
+  resetBtn?.addEventListener("click", () => {
+    success.hidden = true;
+    form.hidden = false;
+    form.elements.name.focus();
   });
 })();
