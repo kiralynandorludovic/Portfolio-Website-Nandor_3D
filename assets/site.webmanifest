@@ -1,0 +1,21 @@
+{
+  "name": "Király Nándor - Freelance CGI Artist",
+  "short_name": "App",
+  "description": "Portfolio website of Király Nándor, a CGI artist based in Romania",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1D2617",
+  "theme_color": "#1D2617",
+  "icons": [
+    {
+      "src": "img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
