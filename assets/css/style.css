@@ -4,6 +4,7 @@
 
 /* ---------- DESIGN TOKENS ---------- */
 :root {
+  color-scheme: dark;
   --bg: #182013;
   --bg-soft: #0f160c;
   --panel: #131c0f;
